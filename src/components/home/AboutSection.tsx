@@ -22,7 +22,7 @@ export function AboutSection() {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                My background in tech sales and senior account management gave me a strong foundation in understanding users, uncovering root causes, and guiding stakeholders toward solutions that deliver business outcomes that matter.
+                My background in Tech Sales and Senior Account Management gave me a strong foundation in understanding users, uncovering root causes, and guiding stakeholders toward solutions that deliver business outcomes that matter.
               </p>
               <p>
                 Over time, I realised the moments that energised me most were the ones spent breaking down customer problems, asking purposeful questions, collaborating cross-functionally, and shaping solutions that created real value. I was practicing product thinking long before I had the title.
