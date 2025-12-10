@@ -87,7 +87,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                  href="/Oluchi_Nwabuwa_Resume.txt"
+                  href="/Oluchi_Nwabuwa_Resume.pdf"
                   download
                   className="flex items-center justify-between group py-4"
                 >
@@ -98,7 +98,7 @@ export default function Contact() {
                     <div>
                       <p className="font-medium text-foreground">Download CV</p>
                       <p className="text-sm text-muted-foreground">
-                        Text format
+                        PDF format
                       </p>
                     </div>
                   </div>
