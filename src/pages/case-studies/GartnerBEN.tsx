@@ -233,21 +233,21 @@ export default function GartnerBEN() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="relative group overflow-hidden rounded-2xl aspect-[4/3]">
-              <img src={benBrixton} alt="BEN team at Brixton Market" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <img src={benBrixton} alt="BEN team volunteering at Brixton Soup Kitchen" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                <p className="text-primary-foreground text-sm font-medium">Team outing at Brixton Village</p>
+                <p className="text-primary-foreground text-sm font-medium">En route to Brixton Soup Kitchen for UK Black History Month</p>
               </div>
             </div>
             <div className="relative group overflow-hidden rounded-2xl aspect-[4/3]">
-              <img src={benOfficeTeam} alt="BEN office celebration" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <img src={benOfficeTeam} alt="BEN Cloud Cup celebration" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                <p className="text-primary-foreground text-sm font-medium">Team celebration at office</p>
+                <p className="text-primary-foreground text-sm font-medium">Cloud Cup Tournament Celebration</p>
               </div>
             </div>
             <div className="relative group overflow-hidden rounded-2xl aspect-[4/3]">
-              <img src={benVirtualMeeting} alt="BEN virtual meeting" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <img src={benVirtualMeeting} alt="Fireside chat preparation with Tim Campbell MBE" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                <p className="text-primary-foreground text-sm font-medium">Virtual planning session</p>
+                <p className="text-primary-foreground text-sm font-medium">Fireside Chat Prep with Tim Campbell MBE</p>
               </div>
             </div>
           </div>
