@@ -22,16 +22,10 @@ export function AboutSection() {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                With over three years in tech sales leadership and senior account management, 
-                I've developed a deep understanding of what drives user success. My journey 
-                into product management has been shaped by a genuine passion for solving 
-                real problems.
+                My background in tech sales and senior account management gave me a strong foundation in understanding users, uncovering root causes, and guiding stakeholders toward solutions that deliver business outcomes that matter.
               </p>
               <p>
-                I bring hands-on experience in user research, user story writing, journey mapping, 
-                MVP definition, and prioritisation frameworks like RICE and MoSCoW. I thrive 
-                in cross-functional teams and love working at the intersection of behaviour 
-                and technology.
+                Over time, I realised the moments that energised me most were the ones spent breaking down customer problems, asking purposeful questions, collaborating cross-functionally, and shaping solutions that created real value. I was practicing product thinking long before I had the title.
               </p>
             </div>
             <Button variant="ghost" className="mt-8 group" asChild>
