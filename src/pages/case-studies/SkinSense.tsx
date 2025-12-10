@@ -2,6 +2,8 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, ExternalLink, CheckCircle2 } from "lucide-react";
+import skinsenseLanding from "@/assets/skinsense-landing.png";
+import skinsenseLogo from "@/assets/skinsense-logo.png";
 
 const keyMetrics = [
   { label: "User Stories", value: "19" },
@@ -41,38 +43,46 @@ export default function SkinSense() {
             </Link>
           </Button>
           
-          <div className="grid lg:grid-cols-3 gap-12">
-            <div className="lg:col-span-2">
-              <p className="text-primary font-medium tracking-wider uppercase text-sm mb-4">
-                Product Manager
-              </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <img src={skinsenseLogo} alt="SkinSense Logo" className="w-12 h-12 rounded-xl" />
+                <p className="text-primary font-medium tracking-wider uppercase text-sm">
+                  Product Manager
+                </p>
+              </div>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-6">
                 SkinSense
               </h1>
               <p className="font-display text-xl md:text-2xl text-muted-foreground italic mb-8">
                 AI-Powered Smartwatch Skin Health Companion
               </p>
-              <p className="text-muted-foreground text-lg leading-relaxed">
+              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
                 Designed an AI-driven smartwatch companion app to help users 
                 monitor and improve their skin health through personalised 
                 insights, environmental tracking, and health platform integrations.
               </p>
-            </div>
-            
-            <div className="bg-card rounded-2xl p-6">
-              <h3 className="font-display text-lg mb-6 text-foreground">Key Metrics</h3>
-              <div className="grid grid-cols-2 gap-4">
+              
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
                 {keyMetrics.map((metric) => (
-                  <div key={metric.label} className="text-center p-4 bg-sage-light/50 rounded-lg">
+                  <div key={metric.label} className="text-center p-4 bg-card rounded-lg">
                     <p className="font-display text-2xl text-primary">{metric.value}</p>
                     <p className="text-xs text-muted-foreground">{metric.label}</p>
                   </div>
                 ))}
               </div>
-              <div className="mt-6">
-                <span className="inline-block px-4 py-2 bg-primary/10 text-primary text-sm font-medium rounded-full">
-                  MVP-Ready
-                </span>
+              <span className="inline-block px-4 py-2 bg-primary/10 text-primary text-sm font-medium rounded-full">
+                MVP-Ready
+              </span>
+            </div>
+            
+            <div className="relative">
+              <div className="bg-gradient-to-br from-primary/20 to-sage-light/50 rounded-3xl p-6 shadow-xl">
+                <img 
+                  src={skinsenseLanding} 
+                  alt="SkinSense App Landing Screen" 
+                  className="rounded-2xl shadow-lg w-full"
+                />
               </div>
             </div>
           </div>
@@ -225,11 +235,18 @@ export default function SkinSense() {
                 ))}
               </ul>
             </div>
-            <div className="flex justify-center">
+            <div className="flex flex-col items-center gap-6">
+              <div className="bg-gradient-to-br from-primary/10 to-sage-light/30 rounded-2xl p-4 max-w-xs">
+                <img 
+                  src={skinsenseLanding} 
+                  alt="SkinSense App Preview" 
+                  className="rounded-xl shadow-md w-full"
+                />
+              </div>
               <Button variant="hero" size="xl" asChild>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://skinsense-care.vercel.app/" target="_blank" rel="noopener noreferrer">
                   <ExternalLink size={18} />
-                  View Prototype
+                  View Live Prototype
                 </a>
               </Button>
             </div>
