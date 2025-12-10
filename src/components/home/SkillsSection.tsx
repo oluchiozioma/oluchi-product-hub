@@ -19,6 +19,15 @@ import {
   Sparkles,
   Cpu,
   Activity,
+  KanbanSquare,
+  BookOpen,
+  Layout,
+  PenTool,
+  Palette,
+  MessagesSquare,
+  Video,
+  Bot,
+  Lightbulb,
 } from "lucide-react";
 
 const skillCategories = [
@@ -28,10 +37,10 @@ const skillCategories = [
       { name: "Product Strategy", icon: Target },
       { name: "User Research", icon: Search },
       { name: "Journey Mapping", icon: GitBranch },
-      { name: "Product Requirements", icon: FileText },
+      { name: "Product Requirements (PRDs, user stories, acceptance criteria)", icon: FileText },
       { name: "Prioritisation (RICE, MoSCoW)", icon: BarChart3 },
       { name: "GTM Planning", icon: Rocket },
-      { name: "Customer Adoption & Onboarding", icon: Users },
+      { name: "Customer Adoption & Onboarding Design", icon: Users },
     ],
   },
   {
@@ -75,19 +84,35 @@ const skillCategories = [
 const tools = [
   {
     category: "Project Management",
-    items: ["Jira", "Notion", "Miro"],
+    items: [
+      { name: "Jira", icon: KanbanSquare },
+      { name: "Notion", icon: BookOpen },
+      { name: "Miro", icon: Layout },
+    ],
   },
   {
     category: "Design & Prototyping",
-    items: ["Figma", "Canva"],
+    items: [
+      { name: "Figma", icon: PenTool },
+      { name: "Canva", icon: Palette },
+    ],
   },
   {
     category: "Collaboration",
-    items: ["Slack", "Microsoft Teams", "Zoom"],
+    items: [
+      { name: "Slack", icon: MessagesSquare },
+      { name: "Microsoft Teams", icon: Users },
+      { name: "Zoom", icon: Video },
+    ],
   },
   {
     category: "AI Tools",
-    items: ["ChatGPT", "Claude", "Lovable", "Reflex AI"],
+    items: [
+      { name: "ChatGPT", icon: Bot },
+      { name: "Claude", icon: Bot },
+      { name: "Lovable", icon: Sparkles },
+      { name: "Reflex AI", icon: Lightbulb },
+    ],
   },
 ];
 
@@ -134,7 +159,7 @@ export function SkillsSection() {
         {/* Tools Section */}
         <div className="border-t border-primary-foreground/20 pt-12 space-y-12">
           <h3 className="font-display text-xl md:text-2xl text-primary-foreground/90">
-            ⭐ Tools
+            Tools
           </h3>
           {tools.map((toolGroup) => (
             <div key={toolGroup.category}>
@@ -142,14 +167,20 @@ export function SkillsSection() {
                 {toolGroup.category}
               </h3>
               <div className="flex flex-wrap gap-3">
-                {toolGroup.items.map((tool) => (
-                  <span
-                    key={tool}
-                    className="bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary-foreground/20 transition-colors"
-                  >
-                    {tool}
-                  </span>
-                ))}
+                {toolGroup.items.map((tool) => {
+                  const IconComponent = tool.icon;
+                  return (
+                    <div
+                      key={tool.name}
+                      className="bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 hover:bg-primary-foreground/20 transition-colors group"
+                    >
+                      <IconComponent size={16} className="text-primary-foreground/80 group-hover:scale-110 transition-transform" />
+                      <span className="text-sm font-medium text-primary-foreground">
+                        {tool.name}
+                      </span>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           ))}
