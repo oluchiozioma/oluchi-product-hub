@@ -33,6 +33,7 @@ import benFootballTeam from "@/assets/ben-football-team.png";
 import benBookClub from "@/assets/ben-book-club.png";
 import benTrophy from "@/assets/ben-trophy.png";
 import benToughMudder from "@/assets/ben-tough-mudder.png";
+import benMeetGreet from "@/assets/ben-meet-greet.png";
 
 const keyMetrics = [
   { label: "Active Members", value: "80+", icon: Users },
@@ -203,18 +204,17 @@ export default function GartnerBEN() {
             </div>
             
             <div className="relative">
-              <div className="bg-gradient-to-br from-primary/20 via-sage/30 to-sage-light/40 rounded-3xl p-8 shadow-2xl border-2 border-primary/20">
-                <div className="bg-card rounded-2xl p-6 shadow-inner border border-border/50">
-                  <div className="text-center space-y-4">
-                    <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-primary to-sage-dark flex items-center justify-center">
-                      <Users className="text-primary-foreground" size={36} />
-                    </div>
-                    <h3 className="font-display text-xl text-foreground">Black Employee Network</h3>
-                    <p className="text-sm text-muted-foreground">London Chapter</p>
-                    <div className="flex justify-center gap-2 pt-4">
-                      <span className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full">Community</span>
-                      <span className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full">DEI</span>
-                      <span className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full">Leadership</span>
+              <div className="bg-gradient-to-br from-primary/20 via-sage/30 to-sage-light/40 rounded-3xl p-3 shadow-2xl border-2 border-primary/20">
+                <div className="relative overflow-hidden rounded-2xl">
+                  <img src={benMeetGreet} alt="BEN UK Meet & Greet" className="w-full h-auto object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
+                    <h3 className="font-display text-xl text-primary-foreground">Black Employee Network</h3>
+                    <p className="text-sm text-primary-foreground/80">London Chapter</p>
+                    <div className="flex justify-center gap-2 pt-3">
+                      <span className="px-3 py-1 bg-primary-foreground/20 backdrop-blur-sm text-primary-foreground text-xs rounded-full">Community</span>
+                      <span className="px-3 py-1 bg-primary-foreground/20 backdrop-blur-sm text-primary-foreground text-xs rounded-full">DEI</span>
+                      <span className="px-3 py-1 bg-primary-foreground/20 backdrop-blur-sm text-primary-foreground text-xs rounded-full">Leadership</span>
                     </div>
                   </div>
                 </div>
@@ -568,9 +568,9 @@ export default function GartnerBEN() {
               <img src={benTrophy} alt="Football tournament winners" className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" />
             </div>
             <div className="p-6">
-              <h3 className="font-display text-xl text-foreground mb-3">Tournament Champions</h3>
+              <h3 className="font-display text-xl text-foreground mb-3">Second Runner Up</h3>
               <p className="text-muted-foreground leading-relaxed">
-                The Gartner team took home the trophy at the inter-company football tournament, 
+                The Gartner team secured second runner up at the inter-company football tournament, 
                 competing against teams from Google, Microsoft, Mastercard, and 20+ other corporate 
                 employee resource groups (ERGs).
               </p>
