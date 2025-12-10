@@ -77,12 +77,14 @@ export default function SkinSense() {
             </div>
             
             <div className="relative">
-              <div className="bg-gradient-to-br from-primary/20 to-sage-light/50 rounded-3xl p-6 shadow-xl">
-                <img 
-                  src={skinsenseLanding} 
-                  alt="SkinSense App Landing Screen" 
-                  className="rounded-2xl shadow-lg w-full"
-                />
+              <div className="bg-gradient-to-br from-sage/30 via-primary/10 to-sage-light/40 rounded-3xl p-8 shadow-2xl border-2 border-primary/20 backdrop-blur-sm">
+                <div className="bg-background/80 rounded-2xl p-4 shadow-inner border border-border/50">
+                  <img 
+                    src={skinsenseLanding} 
+                    alt="SkinSense App Landing Screen" 
+                    className="rounded-xl w-full"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -236,12 +238,14 @@ export default function SkinSense() {
               </ul>
             </div>
             <div className="flex flex-col items-center gap-6">
-              <div className="bg-gradient-to-br from-primary/10 to-sage-light/30 rounded-2xl p-4 max-w-xs">
-                <img 
-                  src={skinsenseLanding} 
-                  alt="SkinSense App Preview" 
-                  className="rounded-xl shadow-md w-full"
-                />
+              <div className="bg-gradient-to-br from-sage/30 via-primary/10 to-sage-light/40 rounded-3xl p-6 shadow-2xl border-2 border-primary/20 backdrop-blur-sm max-w-xs">
+                <div className="bg-background/80 rounded-2xl p-3 shadow-inner border border-border/50">
+                  <img 
+                    src={skinsenseLogo} 
+                    alt="SkinSense Logo" 
+                    className="rounded-xl w-full"
+                  />
+                </div>
               </div>
               <Button variant="hero" size="xl" asChild>
                 <a href="https://skinsense-care.vercel.app/" target="_blank" rel="noopener noreferrer">
