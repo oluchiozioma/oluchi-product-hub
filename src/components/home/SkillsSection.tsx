@@ -132,29 +132,27 @@ export function SkillsSection() {
         </div>
 
         {/* Tools Section */}
-        <div className="border-t border-primary-foreground/20 pt-12">
-          <h3 className="font-display text-xl md:text-2xl mb-8 text-center text-primary-foreground/90">
+        <div className="border-t border-primary-foreground/20 pt-12 space-y-12">
+          <h3 className="font-display text-xl md:text-2xl text-primary-foreground/90">
             ⭐ Tools
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {tools.map((toolGroup) => (
-              <div key={toolGroup.category} className="text-center">
-                <p className="text-xs font-medium text-primary-foreground/60 uppercase tracking-wider mb-3">
-                  {toolGroup.category}
-                </p>
-                <div className="flex flex-wrap justify-center gap-2">
-                  {toolGroup.items.map((tool) => (
-                    <span
-                      key={tool}
-                      className="bg-primary-foreground/15 rounded-lg px-3 py-1.5 text-sm text-primary-foreground hover:bg-primary-foreground/25 transition-colors"
-                    >
-                      {tool}
-                    </span>
-                  ))}
-                </div>
+          {tools.map((toolGroup) => (
+            <div key={toolGroup.category}>
+              <h3 className="font-display text-xl md:text-2xl mb-6 text-primary-foreground/90">
+                {toolGroup.category}
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {toolGroup.items.map((tool) => (
+                  <span
+                    key={tool}
+                    className="bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary-foreground/20 transition-colors"
+                  >
+                    {tool}
+                  </span>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
