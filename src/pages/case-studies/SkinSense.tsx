@@ -255,6 +255,30 @@ export default function SkinSense() {
         </div>
       </section>
 
+      {/* Summary */}
+      <section className="section-padding">
+        <div className="container-narrow mx-auto">
+          <div className="max-w-3xl">
+            <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">
+              Summary
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-8">
+              This project showcases my ability to build user-centered digital products from the ground up. By combining deep research, strategic prioritisation, and structured product development, I translated a real-world problem into a clear product vision and an actionable MVP. I applied end-to-end product practices, from insights synthesis to PRD creation and cross-functional collaboration, resulting in a solution designed to deliver meaningful value to users seeking accessible, personalised skin health support.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              {["User Research", "Product Strategy", "Journey Mapping", "AI/ML Concepts", "MVP Definition", "Health Integrations"].map((skill) => (
+                <span
+                  key={skill}
+                  className="px-4 py-2 bg-sage-light rounded-full text-sm text-foreground"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Navigation */}
       <section className="section-padding bg-card">
         <div className="container-narrow mx-auto flex justify-between">
