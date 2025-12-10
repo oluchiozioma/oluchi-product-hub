@@ -28,7 +28,7 @@ export default function Contact() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button variant="hero" asChild>
-                  <a href="mailto:hello@oluchinwabuwa.com">
+                  <a href="mailto:oluchinwabuwa@gmail.com">
                     <Mail size={18} />
                     Email Me
                   </a>
@@ -53,7 +53,7 @@ export default function Contact() {
               </h2>
               <div className="space-y-6">
                 <a
-                  href="mailto:hello@oluchinwabuwa.com"
+                  href="mailto:oluchinwabuwa@gmail.com"
                   className="flex items-center justify-between group py-4 border-b border-foreground/10"
                 >
                   <div className="flex items-center gap-4">
@@ -61,7 +61,7 @@ export default function Contact() {
                     <div>
                       <p className="font-medium text-foreground">Email</p>
                       <p className="text-sm text-muted-foreground">
-                        hello@oluchinwabuwa.com
+                        oluchinwabuwa@gmail.com
                       </p>
                     </div>
                   </div>
