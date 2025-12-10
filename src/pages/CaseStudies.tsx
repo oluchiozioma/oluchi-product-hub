@@ -18,7 +18,7 @@ const caseStudies = [
     id: "gartner-ben",
     title: "Gartner BEN Redesign",
     subtitle: "Community Engagement Platform",
-    role: "Senior Account Manager | Product-Led Initiative",
+    role: "UK Programme Lead",
     status: "25% engagement improvement",
     description: "Led a product-led initiative to redesign the Gartner BEN community platform, conducting discovery across 5 teams and implementing a new workflow that significantly improved user engagement.",
     tags: ["Journey Mapping", "Discovery", "MVP", "Stakeholders", "Community"],

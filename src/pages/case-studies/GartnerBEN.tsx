@@ -166,7 +166,7 @@ export default function GartnerBEN() {
                   <Users className="text-primary-foreground" size={24} />
                 </div>
                 <p className="text-primary font-medium tracking-wider uppercase text-sm">
-                  UK Project Lead
+                  UK Programme Lead
                 </p>
               </div>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-4">
