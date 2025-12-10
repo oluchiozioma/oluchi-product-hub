@@ -1,27 +1,94 @@
 import {
+  Target,
   Search,
+  GitBranch,
   FileText,
   BarChart3,
-  Users,
-  GitBranch,
-  Target,
   Rocket,
+  Users,
+  MessageSquare,
+  Presentation,
+  Handshake,
+  Heart,
+  LineChart,
+  FlaskConical,
+  Settings,
+  Calendar,
   Code,
+  Pencil,
   Sparkles,
+  Cpu,
   Activity,
 } from "lucide-react";
 
-const skills = [
-  { name: "User Research", icon: Search, category: "Discovery" },
-  { name: "PRD & Acceptance Criteria", icon: FileText, category: "Documentation" },
-  { name: "Data Insights", icon: BarChart3, category: "Analytics" },
-  { name: "Journey Mapping", icon: GitBranch, category: "Discovery" },
-  { name: "Stakeholder Management", icon: Users, category: "Leadership" },
-  { name: "Prioritisation (RICE, MoSCoW)", icon: Target, category: "Strategy" },
-  { name: "GTM Planning", icon: Rocket, category: "Strategy" },
-  { name: "Technical Collaboration", icon: Code, category: "Execution" },
-  { name: "AI/ML Concepts", icon: Sparkles, category: "Technical" },
-  { name: "Health Integrations", icon: Activity, category: "Technical" },
+const skillCategories = [
+  {
+    title: "Core Product Skills",
+    skills: [
+      { name: "Product Strategy", icon: Target },
+      { name: "User Research", icon: Search },
+      { name: "Journey Mapping", icon: GitBranch },
+      { name: "Product Requirements", icon: FileText },
+      { name: "Prioritisation (RICE, MoSCoW)", icon: BarChart3 },
+      { name: "GTM Planning", icon: Rocket },
+      { name: "Customer Adoption & Onboarding", icon: Users },
+    ],
+  },
+  {
+    title: "Communication & Influence",
+    skills: [
+      { name: "Communication & Storytelling", icon: MessageSquare },
+      { name: "Stakeholder Management", icon: Users },
+      { name: "Workshop Facilitation", icon: Presentation },
+      { name: "Cross-functional Collaboration", icon: Handshake },
+      { name: "Community Design & Engagement", icon: Heart },
+    ],
+  },
+  {
+    title: "Analytical & Insight Capabilities",
+    skills: [
+      { name: "Data Insights", icon: LineChart },
+      { name: "KPI Definition & OKRs", icon: Target },
+      { name: "Experimentation / Hypothesis Validation", icon: FlaskConical },
+      { name: "Process Optimisation", icon: Settings },
+    ],
+  },
+  {
+    title: "Execution & Delivery",
+    skills: [
+      { name: "Program Delivery", icon: Rocket },
+      { name: "Sprint Planning & Backlog Management", icon: Calendar },
+      { name: "Technical Collaboration", icon: Code },
+      { name: "Content Design & Enablement", icon: Pencil },
+    ],
+  },
+  {
+    title: "Technical Fluency",
+    skills: [
+      { name: "AI and ML Concepts", icon: Sparkles },
+      { name: "API and System Understanding", icon: Cpu },
+      { name: "Health Integrations", icon: Activity },
+    ],
+  },
+];
+
+const tools = [
+  {
+    category: "Project Management",
+    items: ["Jira", "Notion", "Miro"],
+  },
+  {
+    category: "Design & Prototyping",
+    items: ["Figma", "Canva"],
+  },
+  {
+    category: "Collaboration",
+    items: ["Slack", "Microsoft Teams", "Zoom"],
+  },
+  {
+    category: "AI Tools",
+    items: ["ChatGPT", "Claude", "Lovable", "Reflex AI"],
+  },
 ];
 
 export function SkillsSection() {
@@ -37,26 +104,57 @@ export function SkillsSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
-          {skills.map((skill) => {
-            const IconComponent = skill.icon;
-            return (
-              <div
-                key={skill.name}
-                className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-primary-foreground/20 transition-colors group"
-              >
-                <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-primary-foreground/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <IconComponent size={24} className="text-primary-foreground" />
-                </div>
-                <p className="text-sm font-medium text-primary-foreground">
-                  {skill.name}
-                </p>
-                <p className="text-xs text-primary-foreground/60 mt-1">
-                  {skill.category}
-                </p>
+        {/* Skills Categories */}
+        <div className="space-y-12 mb-16">
+          {skillCategories.map((category) => (
+            <div key={category.title}>
+              <h3 className="font-display text-xl md:text-2xl mb-6 text-primary-foreground/90">
+                {category.title}
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {category.skills.map((skill) => {
+                  const IconComponent = skill.icon;
+                  return (
+                    <div
+                      key={skill.name}
+                      className="bg-primary-foreground/10 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 hover:bg-primary-foreground/20 transition-colors group"
+                    >
+                      <IconComponent size={16} className="text-primary-foreground/80 group-hover:scale-110 transition-transform" />
+                      <span className="text-sm font-medium text-primary-foreground">
+                        {skill.name}
+                      </span>
+                    </div>
+                  );
+                })}
               </div>
-            );
-          })}
+            </div>
+          ))}
+        </div>
+
+        {/* Tools Section */}
+        <div className="border-t border-primary-foreground/20 pt-12">
+          <h3 className="font-display text-xl md:text-2xl mb-8 text-center text-primary-foreground/90">
+            ⭐ Tools
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {tools.map((toolGroup) => (
+              <div key={toolGroup.category} className="text-center">
+                <p className="text-xs font-medium text-primary-foreground/60 uppercase tracking-wider mb-3">
+                  {toolGroup.category}
+                </p>
+                <div className="flex flex-wrap justify-center gap-2">
+                  {toolGroup.items.map((tool) => (
+                    <span
+                      key={tool}
+                      className="bg-primary-foreground/15 rounded-lg px-3 py-1.5 text-sm text-primary-foreground hover:bg-primary-foreground/25 transition-colors"
+                    >
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
