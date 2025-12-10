@@ -31,11 +31,11 @@ export function Footer() {
                 <ArrowUpRight size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
               <a
-                href="mailto:hello@oluchinwabuwa.com"
+                href="mailto:oluchinwabuwa@gmail.com"
                 className="flex items-center gap-3 text-background/70 hover:text-background transition-colors group"
               >
                 <Mail size={20} />
-                <span>hello@oluchinwabuwa.com</span>
+                <span>oluchinwabuwa@gmail.com</span>
                 <ArrowUpRight size={16} className="opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
             </div>
