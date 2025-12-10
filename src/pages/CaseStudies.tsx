@@ -25,17 +25,6 @@ const caseStudies = [
     color: "from-primary/10 to-sage-light/30",
     metrics: ["5 Teams", "3 Problem Themes", "25% Engagement Lift"],
   },
-  {
-    id: "starling-bank",
-    title: "Starling Bank SDP",
-    subtitle: "Sales Development Programme",
-    role: "Programme Lead",
-    status: "10% learner progression improvement",
-    description: "Redesigned the sales development programme journey through user interviews and a new readiness framework, implementing data dashboards and feedback loops for continuous improvement.",
-    tags: ["User Interviews", "Data Analysis", "Framework Design", "Feedback Loops"],
-    color: "from-sage-light/40 to-primary/10",
-    metrics: ["10% Progression Improvement", "New Readiness Framework", "Live Dashboards"],
-  },
 ];
 
 export default function CaseStudies() {

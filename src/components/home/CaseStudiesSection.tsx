@@ -23,16 +23,6 @@ const caseStudies = [
     tags: ["Journey Mapping", "Discovery", "MVP", "Stakeholders"],
     color: "from-primary/10 to-sage-light/30",
   },
-  {
-    id: "starling-bank",
-    title: "Starling Bank SDP",
-    subtitle: "Sales Development Programme",
-    role: "Programme Lead",
-    status: "10% learner progression improvement",
-    description: "Redesigned the sales development programme journey, implementing data-driven insights and feedback loops to improve learner outcomes.",
-    tags: ["User Interviews", "Data Analysis", "Framework Design"],
-    color: "from-sage-light/40 to-primary/10",
-  },
 ];
 
 export function CaseStudiesSection() {
