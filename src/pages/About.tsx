@@ -1,7 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Briefcase, Lightbulb, Rocket, Heart } from "lucide-react";
 import profilePicture from "@/assets/profile-picture.jpg";
 
 const lookingFor = [
@@ -27,6 +27,33 @@ const values = [
   {
     title: "Collaborative",
     description: "Great products come from great teams. I thrive in cross-functional environments.",
+  },
+];
+
+const journeyMilestones = [
+  {
+    icon: Briefcase,
+    title: "Tech Sales & Account Management",
+    description: "Built a strong foundation understanding users, uncovering root causes, and guiding stakeholders toward solutions that deliver business outcomes.",
+    color: "bg-primary/10 text-primary",
+  },
+  {
+    icon: Lightbulb,
+    title: "Discovery of Product Thinking",
+    description: "Realised the moments that energised me most were breaking down problems, asking purposeful questions, and shaping solutions that created real value.",
+    color: "bg-sage/20 text-sage-dark",
+  },
+  {
+    icon: Rocket,
+    title: "Building SkinSense",
+    description: "Created an AI-powered smartwatch skin health companion—owning user research, persona definition, RICE prioritisation, MVP scoping, PRD creation, and roadmap planning.",
+    color: "bg-primary/15 text-primary",
+  },
+  {
+    icon: Heart,
+    title: "Committed to Product Excellence",
+    description: "Focused on building products that elevate everyday experiences and solve problems that often go unnoticed but affect many people.",
+    color: "bg-sage-light text-foreground",
   },
 ];
 
@@ -66,24 +93,61 @@ export default function About() {
       {/* My Journey */}
       <section className="section-padding pt-0">
         <div className="container-narrow mx-auto">
-          <div className="max-w-3xl">
-            <h2 className="font-display text-3xl md:text-4xl text-foreground mb-8">
-              My Journey
-            </h2>
-            <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
-              <p>
-                My background in tech sales and senior account management gave me a strong foundation in understanding users, uncovering root causes, and guiding stakeholders toward solutions that deliver business outcomes that matter.
-              </p>
-              <p>
-                Over time, I realised the moments that energised me most were the ones spent breaking down customer problems, asking purposeful questions, collaborating cross-functionally, and shaping solutions that created real value. I was practicing product thinking long before I had the title.
-              </p>
-              <p>
-                I approach problems with curiosity, strategic reasoning, and a focus on what truly moves users and the business forward. This mindset led me to create <span className="text-foreground font-medium">SkinSense</span>, an AI-powered smartwatch skin health companion designed to address irritation and discoloration among wearable users. I owned the entire process from user research to insights synthesis, persona definition, RICE prioritisation, MVP scoping, PRD creation, and roadmap planning. This project strengthened my ability to bring structure to ambiguity, translate research into decisions, and guide an idea into a tangible product.
-              </p>
-              <p>
-                I am committed to developing strong product foundations built on user understanding, evidence-based prioritisation, and value-driven execution. I care deeply about building products that elevate everyday experiences and solve problems that often go unnoticed but affect many people.
-              </p>
+          <h2 className="font-display text-3xl md:text-4xl text-foreground mb-12">
+            My Journey
+          </h2>
+          
+          {/* Visual Timeline */}
+          <div className="relative mb-12">
+            {/* Timeline line */}
+            <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/40 via-sage/40 to-primary/20 hidden md:block" />
+            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/40 via-sage/40 to-primary/20 md:hidden" />
+            
+            <div className="space-y-8 md:space-y-12">
+              {journeyMilestones.map((milestone, index) => (
+                <div 
+                  key={milestone.title}
+                  className={`relative flex items-start gap-6 md:gap-0 ${
+                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  }`}
+                >
+                  {/* Icon */}
+                  <div className={`relative z-10 flex-shrink-0 w-12 h-12 rounded-full ${milestone.color} flex items-center justify-center shadow-md md:absolute md:left-1/2 md:-translate-x-1/2`}>
+                    <milestone.icon size={20} />
+                  </div>
+                  
+                  {/* Content Card */}
+                  <div className={`flex-1 md:w-[calc(50%-3rem)] ${
+                    index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16'
+                  }`}>
+                    <div className="bg-card rounded-xl p-6 border border-border/50 hover-lift">
+                      <span className="text-xs font-medium text-primary uppercase tracking-wider mb-2 block">
+                        {String(index + 1).padStart(2, '0')}
+                      </span>
+                      <h3 className="font-display text-lg text-foreground mb-2">
+                        {milestone.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {milestone.description}
+                      </p>
+                    </div>
+                  </div>
+                  
+                  {/* Spacer for alternating layout */}
+                  <div className="hidden md:block md:w-[calc(50%-3rem)]" />
+                </div>
+              ))}
             </div>
+          </div>
+
+          {/* Detailed narrative */}
+          <div className="max-w-3xl mx-auto bg-gradient-to-br from-sage-light/50 to-background rounded-2xl p-8 md:p-10 border border-border/30">
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              I approach problems with curiosity, strategic reasoning, and a focus on what truly moves users and the business forward. This mindset led me to create <span className="text-foreground font-medium">SkinSense</span>, where I strengthened my ability to bring structure to ambiguity, translate research into decisions, and guide an idea into a tangible product.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              I am committed to developing strong product foundations built on user understanding, evidence-based prioritisation, and value-driven execution.
+            </p>
           </div>
         </div>
       </section>
