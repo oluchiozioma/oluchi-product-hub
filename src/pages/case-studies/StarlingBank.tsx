@@ -49,7 +49,7 @@ export default function StarlingBank() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
               <p className="text-primary font-medium tracking-wider uppercase text-sm mb-4">
-                Senior Account Management Specialist
+                Programme Lead
               </p>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-6">
                 Starling Bank SDP
