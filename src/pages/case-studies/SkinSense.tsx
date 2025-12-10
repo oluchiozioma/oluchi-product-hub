@@ -9,12 +9,11 @@ const keyMetrics = [
   { label: "User Stories", value: "19" },
   { label: "Epics", value: "6" },
   { label: "P0 Features", value: "6" },
-  { label: "Roadmap", value: "18 months" },
 ];
 
 const deliverables = [
   "Product Requirements Document (PRD)",
-  "18-month Product Roadmap",
+  "Interactive Prototype",
   "Interactive Prototype",
   "RICE Prioritisation Model",
   "User Personas & Journey Maps",
@@ -71,9 +70,6 @@ export default function SkinSense() {
                   </div>
                 ))}
               </div>
-              <span className="inline-block px-4 py-2 bg-primary/10 text-primary text-sm font-medium rounded-full">
-                MVP-Ready
-              </span>
             </div>
             
             <div className="relative">

@@ -46,7 +46,7 @@ const journeyMilestones = [
   {
     icon: Rocket,
     title: "Building SkinSense",
-    description: "Created an AI-powered smartwatch skin health companion—owning user research, persona definition, RICE prioritisation, MVP scoping, PRD creation, and roadmap planning.",
+    description: "Created an AI-powered smartwatch skin health companion—owning user research, persona definition, RICE prioritisation, MVP scoping, and PRD creation.",
     color: "bg-primary/15 text-primary",
   },
   {
