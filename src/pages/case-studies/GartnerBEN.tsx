@@ -18,9 +18,21 @@ import {
   Brain,
   Layers,
   ClipboardCheck,
-  LineChart
+  LineChart,
+  Camera
 } from "lucide-react";
 import { useState } from "react";
+
+// Import images
+import benFoodbank1 from "@/assets/ben-foodbank-1.png";
+import benFoodbank2 from "@/assets/ben-foodbank-2.png";
+import benBrixton from "@/assets/ben-brixton.png";
+import benVirtualMeeting from "@/assets/ben-virtual-meeting.png";
+import benOfficeTeam from "@/assets/ben-office-team.png";
+import benFootballTeam from "@/assets/ben-football-team.png";
+import benBookClub from "@/assets/ben-book-club.png";
+import benTrophy from "@/assets/ben-trophy.png";
+import benToughMudder from "@/assets/ben-tough-mudder.png";
 
 const keyMetrics = [
   { label: "Active Members", value: "80+", icon: Users },
@@ -206,6 +218,36 @@ export default function GartnerBEN() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Photo Gallery - Community Highlights */}
+      <section className="section-padding bg-card">
+        <div className="container-narrow mx-auto">
+          <div className="flex items-center gap-3 mb-8">
+            <Camera className="text-primary" size={24} />
+            <h2 className="font-display text-2xl text-foreground">Community in Action</h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="relative group overflow-hidden rounded-2xl aspect-[4/3]">
+              <img src={benBrixton} alt="BEN team at Brixton Market" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <p className="text-primary-foreground text-sm font-medium">Team outing at Brixton Village</p>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden rounded-2xl aspect-[4/3]">
+              <img src={benOfficeTeam} alt="BEN office celebration" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <p className="text-primary-foreground text-sm font-medium">Team celebration at office</p>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden rounded-2xl aspect-[4/3]">
+              <img src={benVirtualMeeting} alt="BEN virtual meeting" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <p className="text-primary-foreground text-sm font-medium">Virtual planning session</p>
               </div>
             </div>
           </div>
@@ -465,6 +507,73 @@ export default function GartnerBEN() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Events Gallery */}
+      <section className="section-padding bg-card">
+        <div className="container-narrow mx-auto">
+          <div className="flex items-center gap-3 mb-4">
+            <Camera className="text-primary" size={24} />
+            <h2 className="font-display text-2xl text-foreground">Events & Activities</h2>
+          </div>
+          <p className="text-muted-foreground mb-8 max-w-2xl">
+            From charity fundraisers to sports tournaments, BEN brought the community together through diverse programming.
+          </p>
+          
+          {/* Masonry-style gallery */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="md:col-span-2 md:row-span-2">
+              <div className="relative group overflow-hidden rounded-2xl h-full">
+                <img src={benFootballTeam} alt="BEN Football Tournament" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  <div>
+                    <p className="text-primary-foreground font-display text-lg">Football Tournament</p>
+                    <p className="text-primary-foreground/80 text-sm">Inter-company ERG event</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden rounded-2xl aspect-square">
+              <img src={benFoodbank1} alt="Charity foodbank volunteering" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <p className="text-primary-foreground text-sm">Foodbank Volunteering</p>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden rounded-2xl aspect-square">
+              <img src={benFoodbank2} alt="Community charity work" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <p className="text-primary-foreground text-sm">Brixton Soup Kitchen</p>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden rounded-2xl aspect-square">
+              <img src={benBookClub} alt="Black Ink Book Club" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <p className="text-primary-foreground text-sm">Black Ink Book Club</p>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden rounded-2xl aspect-square">
+              <img src={benToughMudder} alt="Tough Mudder team event" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                <p className="text-primary-foreground text-sm">Tough Mudder Challenge</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Trophy highlight */}
+          <div className="mt-8 grid md:grid-cols-2 gap-6 items-center">
+            <div className="relative group overflow-hidden rounded-2xl">
+              <img src={benTrophy} alt="Football tournament winners" className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div className="p-6">
+              <h3 className="font-display text-xl text-foreground mb-3">Tournament Champions</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                The Gartner team took home the trophy at the inter-company football tournament, 
+                competing against teams from Google, Microsoft, Mastercard, and 20+ other corporate 
+                employee resource groups (ERGs).
+              </p>
             </div>
           </div>
         </div>
