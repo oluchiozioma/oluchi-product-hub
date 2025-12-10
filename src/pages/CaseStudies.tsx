@@ -19,11 +19,11 @@ const caseStudies = [
     title: "Gartner BEN Redesign",
     subtitle: "Community Engagement Platform",
     role: "UK Programme Lead",
-    status: "25% engagement improvement",
+    status: "75% engagement improvement",
     description: "Led a product-led initiative to redesign the Gartner BEN community platform, conducting discovery across 5 teams and implementing a new workflow that significantly improved user engagement.",
     tags: ["Journey Mapping", "Discovery", "MVP", "Stakeholders", "Community"],
     color: "from-primary/10 to-sage-light/30",
-    metrics: ["5 Teams", "3 Problem Themes", "25% Engagement Lift"],
+    metrics: ["5 Teams", "3 Problem Themes", "75% Engagement Lift"],
   },
 ];
 
