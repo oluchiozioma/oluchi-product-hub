@@ -34,6 +34,11 @@ const researchMethods = [
     title: "Stakeholder Interviews & Surveys",
     count: "50+",
     description: "Combined in-depth conversations with associates, allies, and leadership alongside quantitative surveys to understand needs, barriers, and aspirations for an inclusive community."
+  },
+  {
+    title: "US BEN Analysis",
+    count: "3 years",
+    description: "Studied trends, successes, and learnings from the established US BEN chapter to inform the UK launch strategy."
   }
 ];
 
