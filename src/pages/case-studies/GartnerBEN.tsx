@@ -592,8 +592,8 @@ export default function GartnerBEN() {
             </Link>
           </Button>
           <Button variant="outline" asChild>
-            <Link to="/case-studies/starling-bank">
-              Next: Starling Bank
+            <Link to="/case-studies">
+              All Case Studies
               <ArrowRight size={16} className="ml-2" />
             </Link>
           </Button>
