@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 const stats = [
   { number: "3+", label: "Years in Tech Sales" },
   { number: "5+", label: "Products Shipped" },
-  { number: "25%", label: "Engagement Improvement" },
+  { number: "75%", label: "Engagement Improvement" },
 ];
 
 export function AboutSection() {
