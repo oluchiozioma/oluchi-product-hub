@@ -27,7 +27,7 @@ export function HeroSection() {
               className="text-muted-foreground text-lg md:text-xl max-w-2xl mb-12 leading-relaxed animate-fade-up"
               style={{ animationDelay: "0.3s" }}
             >
-              Hi, I'm <span className="text-foreground font-medium">Oluchi</span> — I am a tech sales leader transitioning into product management, driven by curiosity, strategic thinking, and a focus on creating products that deliver meaningful value for users and businesses. I thrive on uncovering real problems, turning insights into actionable solutions, and collaborating with cross-functional teams to build products that truly make an impact.
+              Hi, I'm <span className="text-foreground font-medium">Oluchi</span> — I am a Tech Sales Leader transitioning into Product Management, driven by curiosity, strategic thinking, and a focus on creating products that deliver meaningful value for users and businesses. I thrive on uncovering real problems, turning insights into actionable solutions, and collaborating with cross-functional teams to build products that truly make an impact.
             </p>
             
             <div 
