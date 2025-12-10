@@ -1,7 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowLeft, ExternalLink, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, ExternalLink, CheckCircle2, Brain } from "lucide-react";
 import skinsenseLanding from "@/assets/skinsense-landing.png";
 import skinsenseLogo from "@/assets/skinsense-logo.png";
 import skinsenseAppPreview from "@/assets/skinsense-app-preview.png";
@@ -256,24 +256,23 @@ export default function SkinSense() {
       </section>
 
       {/* Summary */}
-      <section className="section-padding">
+      <section className="section-padding bg-card">
         <div className="container-narrow mx-auto">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl mx-auto text-center">
+            <Brain className="mx-auto text-primary mb-6" size={48} />
             <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">
               Summary
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
               This project showcases my ability to build user-centered digital products from the ground up. By combining deep research, strategic prioritisation, and structured product development, I translated a real-world problem into a clear product vision and an actionable MVP. I applied end-to-end product practices, from insights synthesis to PRD creation and cross-functional collaboration, resulting in a solution designed to deliver meaningful value to users seeking accessible, personalised skin health support.
             </p>
-            <div className="flex flex-wrap gap-3">
-              {["User Research", "Product Strategy", "Journey Mapping", "AI/ML Concepts", "MVP Definition", "Health Integrations"].map((skill) => (
-                <span
-                  key={skill}
-                  className="px-4 py-2 bg-sage-light rounded-full text-sm text-foreground"
-                >
-                  {skill}
-                </span>
-              ))}
+            <div className="flex flex-wrap justify-center gap-3">
+              <span className="px-4 py-2 bg-primary/10 text-primary text-sm rounded-full">User Research</span>
+              <span className="px-4 py-2 bg-primary/10 text-primary text-sm rounded-full">Product Strategy</span>
+              <span className="px-4 py-2 bg-primary/10 text-primary text-sm rounded-full">Journey Mapping</span>
+              <span className="px-4 py-2 bg-primary/10 text-primary text-sm rounded-full">AI/ML Concepts</span>
+              <span className="px-4 py-2 bg-primary/10 text-primary text-sm rounded-full">MVP Definition</span>
+              <span className="px-4 py-2 bg-primary/10 text-primary text-sm rounded-full">Health Integrations</span>
             </div>
           </div>
         </div>
