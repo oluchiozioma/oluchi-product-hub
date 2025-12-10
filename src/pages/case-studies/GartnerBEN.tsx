@@ -24,26 +24,16 @@ import { useState } from "react";
 
 const keyMetrics = [
   { label: "Active Members", value: "80+", icon: Users },
-  { label: "Engagement Lift", value: "+25%", icon: TrendingUp },
+  { label: "Engagement Lift", value: "75%", icon: TrendingUp },
   { label: "Duration", value: "15 mo", icon: Calendar },
-  { label: "Interviews", value: "20+", icon: MessageSquare },
+  { label: "Research", value: "50+", icon: MessageSquare },
 ];
 
 const researchMethods = [
   {
-    title: "Stakeholder Interviews",
-    count: "20+",
-    description: "In-depth conversations with associates, allies, and leadership to understand needs, barriers, and aspirations for an inclusive community."
-  },
-  {
-    title: "Surveys",
+    title: "Stakeholder Interviews & Surveys",
     count: "50+",
-    description: "Quantitative surveys distributed to London associates to validate hypotheses and prioritise community features."
-  },
-  {
-    title: "US BEN Analysis",
-    count: "3 years",
-    description: "Studied trends, successes, and learnings from the established US BEN chapter to inform the UK launch strategy."
+    description: "Combined in-depth conversations with associates, allies, and leadership alongside quantitative surveys to understand needs, barriers, and aspirations for an inclusive community."
   }
 ];
 
@@ -100,18 +90,16 @@ const timeline = [
   },
   {
     phase: "Scale",
-    date: "Apr - Dec 2025",
+    date: "Jan 2025 - Dec 2025",
     activities: ["Member growth campaigns", "Leadership engagement", "Impact measurement", "Iteration"]
   }
 ];
 
 const mvpOfferings = [
-  "Monthly networking and professional development events",
-  "Mentorship matching program with senior leaders",
-  "Allyship education workshops and resources",
-  "Internal communications channel (MS Teams)",
-  "Quarterly town halls with leadership",
-  "Cultural celebration programming"
+  "Quarterly networking & professional development events",
+  "Fireside Chat with Tim Campbell MBE on Empowering the Leaders of Tomorrow: Imposter Syndrome, Resilience, Value Creation & Driving Empathy as individuals",
+  "Charity fundraising for Brixton Soup and Urban Synergy Charities dedicated to the homeless and young people",
+  "Football tournament with Google, Microsoft, Mastercard and 20+ corporate employee resource groups (ERG)"
 ];
 
 const tools = [
