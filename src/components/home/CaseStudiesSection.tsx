@@ -8,19 +8,19 @@ const caseStudies = [
     title: "SkinSense",
     subtitle: "AI-Powered Smartwatch Skin Health Companion",
     role: "Product Manager",
-    status: "6 P0 Features Defined",
-    description: "Designed an AI-driven smartwatch companion app to help users monitor and improve their skin health through personalised insights and HealthKit integrations.",
-    tags: ["User Research", "PRD", "AI/ML"],
+    status: "19 User Stories • 6 Epics • 6 P0 Features",
+    description: "Designed an AI-driven skin health companion app that helps users monitor, understand, and improve their skin health through personalised insights, environmental tracking, and smartwatch integrations. Defined the product strategy, led user research, created all requirements, and collaborated with engineers to shape the MVP.",
+    tags: ["User Research", "PRD", "RICE Prioritisation", "AI/ML", "Health Integrations", "Journey Mapping"],
     color: "from-sage/20 to-sage-light/40",
   },
   {
     id: "gartner-ben",
     title: "Gartner BEN Redesign",
     subtitle: "Community Engagement Platform",
-    role: "UK Programme Lead",
-    status: "25% engagement improvement",
-    description: "Led a product-led initiative to redesign the Gartner BEN community platform, driving significant improvements in user engagement and satisfaction.",
-    tags: ["Journey Mapping", "Discovery", "MVP", "Stakeholders"],
+    role: "Product Programme Lead",
+    status: "75% Engagement Improvement • 80+ Active Members",
+    description: "Led a product-led initiative to redesign the Gartner BEN community platform, driving meaningful improvements in inclusion, engagement, and operational efficiency for Black and ethnic minority associates in London. Defined user needs through research, delivered high-impact campaigns, and partnered cross-functionally to launch a successful MVP that grew rapidly.",
+    tags: ["Discovery", "Journey Mapping", "MVP Delivery", "Stakeholder Management", "Personas", "Community Engagement"],
     color: "from-primary/10 to-sage-light/30",
   },
 ];
@@ -57,9 +57,6 @@ export function CaseStudiesSection() {
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
                   <div className="flex-1">
                     <div className="flex items-center gap-4 mb-4">
-                      <span className="text-primary font-medium text-sm">
-                        0{index + 1}
-                      </span>
                       <span className="text-muted-foreground text-sm">
                         {study.role}
                       </span>
