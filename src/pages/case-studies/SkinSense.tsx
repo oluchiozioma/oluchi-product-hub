@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, ExternalLink, CheckCircle2 } from "lucide-react";
 import skinsenseLanding from "@/assets/skinsense-landing.png";
 import skinsenseLogo from "@/assets/skinsense-logo.png";
+import skinsenseAppPreview from "@/assets/skinsense-app-preview.png";
 
 const keyMetrics = [
   { label: "User Stories", value: "19" },
@@ -73,11 +74,11 @@ export default function SkinSense() {
             </div>
             
             <div className="relative">
-              <div className="bg-gradient-to-br from-sage/30 via-primary/10 to-sage-light/40 rounded-3xl p-8 shadow-2xl border-2 border-primary/20 backdrop-blur-sm">
-                <div className="bg-background/80 rounded-2xl p-4 shadow-inner border border-border/50">
+              <div className="bg-gradient-to-br from-sage/30 via-primary/10 to-sage-light/40 rounded-3xl p-6 shadow-2xl border-2 border-primary/20 backdrop-blur-sm">
+                <div className="bg-background/90 rounded-2xl p-4 shadow-inner border border-border/50">
                   <img 
-                    src={skinsenseLanding} 
-                    alt="SkinSense App Landing Screen" 
+                    src={skinsenseAppPreview} 
+                    alt="SkinSense App Preview showing key features" 
                     className="rounded-xl w-full"
                   />
                 </div>
