@@ -34,13 +34,13 @@ const journeyMilestones = [
   {
     icon: Briefcase,
     title: "Tech Sales & Account Management",
-    description: "Built a strong foundation understanding users, uncovering root causes, and guiding stakeholders toward solutions that deliver business outcomes.",
+    description: "Built a strong foundation in understanding users, identifying root problems, and collaborating with stakeholders to deliver solutions that achieve business results.",
     color: "bg-primary/10 text-primary",
   },
   {
     icon: Lightbulb,
     title: "Discovery of Product Thinking",
-    description: "Realised the moments that energised me most were breaking down problems, asking purposeful questions, and shaping solutions that created real value.",
+    description: "Realised the moments that energised me most were breaking down user problems, asking purposeful questions, and shaping solutions that created real impact.",
     color: "bg-sage/20 text-sage-dark",
   },
   {
@@ -69,10 +69,10 @@ export default function About() {
                 About Me
               </p>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-8">
-                Hi, I am Oluchi.
+                Hi, I'm Oluchi.
               </h1>
               <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
-                I am a tech sales leader transitioning into product management, driven by a commitment to solving real-world problems with clarity, intention, and meaningful impact.
+                I am a Tech Sales Leader transitioning into Product Management. I blend customer insight, problem framing, and cross-functional collaboration to build products that deliver measurable value.
               </p>
             </div>
             
@@ -143,10 +143,10 @@ export default function About() {
           {/* Detailed narrative */}
           <div className="max-w-3xl mx-auto bg-gradient-to-br from-sage-light/50 to-background rounded-2xl p-8 md:p-10 border border-border/30">
             <p className="text-muted-foreground leading-relaxed mb-4">
-              I approach problems with curiosity, strategic reasoning, and a focus on what truly moves users and the business forward. This mindset led me to create <span className="text-foreground font-medium">SkinSense</span>, where I strengthened my ability to bring structure to ambiguity, translate research into decisions, and guide an idea into a tangible product.
+              My background in Tech Sales and Senior Account Management gave me a strong foundation in understanding users, identifying root problems, and collaborating with stakeholders to deliver solutions that achieve business results. These experiences naturally developed my product instincts including asking the right questions, mapping pain points, and shaping clear value propositions.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              I am committed to developing strong product foundations built on user understanding, evidence-based prioritisation, and value-driven execution.
+              Over time, I realised the moments that energised me most were the ones spent breaking down user problems, asking purposeful questions, and shaping solutions that created real impact. I discovered I was practicing product thinking long before I had the title.
             </p>
           </div>
         </div>
