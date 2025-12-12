@@ -6,30 +6,31 @@ const caseStudies = [
   {
     id: "skinsense",
     title: "SkinSense",
-    subtitle: "AI-Powered Smartwatch Skin Health Companion",
-    role: "Product Manager",
-    status: "19 User Stories • 6 Epics • 6 P0 Features",
-    description: "Designed an AI-driven skin health companion app that helps users monitor, understand, and improve their skin health through personalised insights, environmental tracking, and smartwatch integrations. Defined the product strategy, led user research, created all requirements, and collaborated with engineers to shape the MVP.",
-    tags: ["User Research", "PRD", "RICE Prioritisation", "AI/ML", "Health Integrations", "Journey Mapping"],
-    color: "from-sage/20 to-sage-light/40",
+    problem: "Millions struggle to understand and manage their skin conditions without accessible, personalised guidance.",
+    contribution: "Led end-to-end product discovery, user research, and MVP definition for an AI-powered smartwatch skin health companion.",
+    impact: "19 User Stories • 6 P0 Features Defined",
   },
   {
     id: "gartner-ben",
     title: "Gartner BEN Redesign",
-    subtitle: "Community Engagement Platform",
-    role: "Product Programme Lead",
-    status: "75% Engagement Improvement • 80+ Active Members",
-    description: "Led a product-led initiative to redesign the Gartner BEN community platform, driving meaningful improvements in inclusion, engagement, and operational efficiency for Black and ethnic minority associates in London. Defined user needs through research, delivered high-impact campaigns, and partnered cross-functionally to launch a successful MVP that grew rapidly.",
-    tags: ["Discovery", "Journey Mapping", "MVP Delivery", "Stakeholder Management", "Personas", "Community Engagement"],
-    color: "from-primary/10 to-sage-light/30",
+    problem: "Black and ethnic minority associates lacked a dedicated community platform for meaningful connection and professional growth.",
+    contribution: "Drove product-led initiative to redesign community engagement through research, personas, and cross-functional delivery.",
+    impact: "75% Engagement Increase",
+  },
+  {
+    id: "coming-soon",
+    title: "Enterprise Analytics Dashboard",
+    problem: "Sales teams spent hours manually compiling data from multiple sources to track pipeline performance.",
+    contribution: "Shaped product requirements and user flows for a unified analytics dashboard consolidating key metrics.",
+    impact: "Coming Soon",
   },
 ];
 
 export function CaseStudiesSection() {
   return (
-    <section className="section-padding">
+    <section className="section-padding bg-card/50">
       <div className="container-narrow mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
             <p className="text-primary font-medium tracking-wider uppercase text-sm mb-4">
               Selected Work
@@ -46,48 +47,49 @@ export function CaseStudiesSection() {
           </Button>
         </div>
 
-        <div className="grid gap-8">
-          {caseStudies.map((study, index) => (
+        <div className="grid md:grid-cols-3 gap-6">
+          {caseStudies.map((study) => (
             <Link
               key={study.id}
-              to={`/case-studies/${study.id}`}
-              className="group block"
+              to={study.id === "coming-soon" ? "#" : `/case-studies/${study.id}`}
+              className={`group block ${study.id === "coming-soon" ? "pointer-events-none" : ""}`}
             >
-              <article className={`bg-gradient-to-br ${study.color} rounded-2xl p-8 md:p-12 hover-lift`}>
-                <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-4 mb-4">
-                      <span className="text-muted-foreground text-sm">
-                        {study.role}
-                      </span>
-                    </div>
-                    <h3 className="font-display text-2xl md:text-3xl text-foreground mb-2 group-hover:text-primary transition-colors">
-                      {study.title}
-                    </h3>
-                    <p className="text-muted-foreground font-medium mb-4">
-                      {study.subtitle}
+              <article className="h-full bg-background rounded-2xl p-6 md:p-8 border border-border/50 hover:border-primary/30 hover:shadow-elegant transition-all duration-300">
+                <div className="flex flex-col h-full">
+                  {/* Title */}
+                  <h3 className="font-display text-xl md:text-2xl text-foreground mb-4 group-hover:text-primary transition-colors">
+                    {study.title}
+                  </h3>
+                  
+                  {/* Problem */}
+                  <div className="mb-4">
+                    <p className="text-xs font-medium text-primary uppercase tracking-wider mb-2">Problem</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {study.problem}
                     </p>
-                    <p className="text-muted-foreground text-sm max-w-xl leading-relaxed">
-                      {study.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2 mt-6">
-                      {study.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="px-3 py-1 bg-background/60 rounded-full text-xs text-foreground/70"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <span className="text-sm text-primary font-medium">
-                      {study.status}
-                    </span>
-                    <div className="w-12 h-12 rounded-full bg-foreground flex items-center justify-center group-hover:bg-primary transition-colors">
-                      <ArrowUpRight className="text-background" size={20} />
+                  
+                  {/* Contribution */}
+                  <div className="mb-6 flex-1">
+                    <p className="text-xs font-medium text-primary uppercase tracking-wider mb-2">My Role</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {study.contribution}
+                    </p>
+                  </div>
+                  
+                  {/* Impact */}
+                  <div className="pt-4 border-t border-border/50 flex items-center justify-between">
+                    <div>
+                      <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1">Impact</p>
+                      <p className="text-foreground font-semibold text-sm">
+                        {study.impact}
+                      </p>
                     </div>
+                    {study.id !== "coming-soon" && (
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
+                        <ArrowUpRight className="text-primary group-hover:text-background transition-colors" size={18} />
+                      </div>
+                    )}
                   </div>
                 </div>
               </article>
