@@ -20,12 +20,12 @@ const caseStudies = [
     impact: "75% Engagement Increase",
   },
   {
-    id: "coming-soon",
-    title: "Enterprise Analytics Dashboard",
-    problem: "Sales teams wasted hours manually compiling pipeline data from fragmented sources.",
-    role: "Shaped requirements and user flows for a unified dashboard consolidating key performance metrics.",
-    skills: ["Requirements Gathering", "User Flows", "Data Visualisation", "Stakeholder Alignment"],
-    impact: "Coming Soon",
+    id: "talent-development",
+    title: "Talent Development & Productivity Optimisation",
+    problem: "New sales associates lacked a consistent onboarding experience, performance visibility, and structured coaching—leading to slow ramp times and uneven productivity.",
+    role: "Built a data-informed enablement and coaching program for 10+ early-career associates, including defining problem areas through discovery, aligning with stakeholders, creating workflows, and implementing improvements that increased productivity and engagement.",
+    skills: ["User Research", "Workflow Design", "Process Optimisation", "Metrics Definition", "Stakeholder Alignment", "Experimentation"],
+    impact: "20% Productivity Increase",
   },
 ];
 
@@ -61,8 +61,8 @@ export function CaseStudiesSection() {
           {caseStudies.map((study) => (
             <Link
               key={study.id}
-              to={study.id === "coming-soon" ? "#" : `/case-studies/${study.id}`}
-              className={`group block ${study.id === "coming-soon" ? "pointer-events-none" : ""}`}
+              to={`/case-studies/${study.id}`}
+              className="group block"
             >
               <article className="h-full bg-background rounded-2xl p-6 md:p-8 border border-border/50 hover:border-primary/30 hover:shadow-elegant transition-all duration-300">
                 <div className="flex flex-col h-full">
@@ -110,11 +110,9 @@ export function CaseStudiesSection() {
                         {study.impact}
                       </p>
                     </div>
-                    {study.id !== "coming-soon" && (
-                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
-                        <ArrowUpRight className="text-primary group-hover:text-background transition-colors" size={18} />
-                      </div>
-                    )}
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
+                      <ArrowUpRight className="text-primary group-hover:text-background transition-colors" size={18} />
+                    </div>
                   </div>
                 </div>
               </article>
