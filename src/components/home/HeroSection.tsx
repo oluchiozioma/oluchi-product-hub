@@ -20,14 +20,14 @@ export function HeroSection() {
               className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.1] mb-6 animate-fade-up"
               style={{ animationDelay: "0.2s" }}
             >
-              Turning curiosity into products that solve real-world problems.
+              Product Manager turning customer insight into real-world solutions.
             </h1>
             
             <p 
               className="text-muted-foreground text-lg md:text-xl max-w-2xl mb-12 leading-relaxed animate-fade-up"
               style={{ animationDelay: "0.3s" }}
             >
-              Hi, I'm <span className="text-foreground font-medium">Oluchi</span> — I am a Tech Sales Leader transitioning into Product Management, driven by curiosity, strategic thinking, and a focus on creating products that deliver meaningful value for users and businesses. I thrive on uncovering real problems, turning insights into actionable solutions, and collaborating with cross-functional teams to build products that truly make an impact.
+              Hi, I'm <span className="text-foreground font-medium">Oluchi</span>. I am a Tech Sales Leader transitioning into Product Management. I blend customer insight, problem framing, and cross-functional collaboration to build products that deliver measurable value. With a background in uncovering user pain points and driving business outcomes, I bring a strong foundation in discovery, prioritization, and outcome-focused thinking.
             </p>
             
             <div 
@@ -35,10 +35,10 @@ export function HeroSection() {
               style={{ animationDelay: "0.4s" }}
             >
               <Button variant="hero" asChild>
-                <Link to="/case-studies">View My Work</Link>
+                <Link to="/case-studies">View Case Studies</Link>
               </Button>
               <Button variant="hero-outline" asChild>
-                <Link to="/contact">Get in Touch</Link>
+                <Link to="/contact">Contact Me</Link>
               </Button>
             </div>
           </div>
