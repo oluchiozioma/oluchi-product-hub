@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 const stats = [
-  { number: "3+", label: "Years in Tech Sales" },
-  { number: "5+", label: "Products Shipped" },
-  { number: "75%", label: "Engagement Improvement" },
+  { number: "3+", label: "Years understanding users in Tech Sales" },
+  { number: "5+", label: "Product releases supported" },
+  { number: "75%", label: "Increase in customer engagement" },
 ];
 
 export function AboutSection() {
@@ -18,14 +18,14 @@ export function AboutSection() {
               About Me
             </p>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground mb-6 leading-tight">
-              From Tech Sales Leader to Product Builder
+              From Tech Sales Leader to Product Manager. Driven by insight and impact.
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                My background in Tech Sales and Senior Account Management gave me a strong foundation in understanding users, uncovering root causes, and guiding stakeholders toward solutions that deliver business outcomes that matter.
+                My background in Tech Sales and Senior Account Management gave me a strong foundation in understanding users, identifying root problems, and collaborating with stakeholders to deliver solutions that achieve business results. These experiences naturally developed my product instincts including asking the right questions, mapping pain points, and shaping clear value propositions.
               </p>
               <p>
-                Over time, I realised the moments that energised me most were the ones spent breaking down customer problems, asking purposeful questions, collaborating cross-functionally, and shaping solutions that created real value. I was practicing product thinking long before I had the title.
+                Over time, I realised the moments that energised me most were the ones spent breaking down user problems, asking purposeful questions, and shaping solutions that created real impact. I discovered I was practicing product thinking long before I had the title.
               </p>
             </div>
             <Button variant="ghost" className="mt-8 group" asChild>
