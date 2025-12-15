@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 const caseStudies = [
   {
     id: "skinsense",
-    badge: "PRODUCT MANAGER",
     title: "SkinSense",
     subtitle: "AI-Powered Smartwatch Skin Health Companion",
     descriptor: "Designed an AI-driven smartwatch companion app to help users monitor and improve their skin health through personalized insights, environmental tracking, and health platform integrations.",
@@ -88,9 +87,9 @@ export function CaseStudiesSection() {
               <article className="h-full bg-background rounded-2xl p-6 md:p-8 border border-border/50 hover:border-primary/30 hover:shadow-elegant transition-all duration-300">
                 <div className="flex flex-col h-full">
                   {/* Badge */}
-                  {'badge' in study && (
+                  {'badge' in study && study.badge && (
                     <span className="inline-block px-2 py-0.5 bg-primary/10 text-primary text-xs font-medium rounded mb-2">
-                      {study.badge}
+                      {String(study.badge)}
                     </span>
                   )}
                   
