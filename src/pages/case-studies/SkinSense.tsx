@@ -7,9 +7,8 @@ import skinsenseLogo from "@/assets/skinsense-logo.png";
 import skinsenseAppPreview from "@/assets/skinsense-app-preview.png";
 
 const keyMetrics = [
-  { label: "User Stories", value: "19" },
-  { label: "Epics", value: "6" },
-  { label: "P0 Features", value: "6" },
+  { label: "Epics defined", value: "6" },
+  { label: "User stories written", value: "19" },
 ];
 
 const deliverables = [
