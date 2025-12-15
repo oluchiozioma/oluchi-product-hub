@@ -39,7 +39,7 @@ const keyMetrics = [
   { label: "Active Members", value: "80+", icon: Users },
   { label: "Engagement Lift", value: "75%", icon: TrendingUp },
   { label: "Duration", value: "15 mo", icon: Calendar },
-  { label: "Research", value: "50+", icon: MessageSquare },
+  { label: "Research Interviews", value: "50+", icon: MessageSquare },
 ];
 
 const researchMethods = [
@@ -603,7 +603,7 @@ export default function GartnerBEN() {
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 text-center">
                   <TrendingUp size={28} className="mx-auto mb-2" />
-                  <p className="font-display text-3xl">+25%</p>
+                  <p className="font-display text-3xl">+75%</p>
                   <p className="text-sm text-primary-foreground/70">Engagement</p>
                 </div>
                 <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 text-center">

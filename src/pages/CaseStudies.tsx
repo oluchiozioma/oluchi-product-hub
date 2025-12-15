@@ -15,12 +15,14 @@ const caseStudies = [
   },
   {
     id: "gartner-ben",
-    title: "Gartner BEN Redesign",
-    category: "Internal Community Platform",
-    role: "Product Manager",
-    summary: "Redesigned an internal community platform through cross-functional discovery, delivering an MVP that drove 75% engagement increase.",
-    tags: ["Discovery", "Journey Mapping", "Stakeholder Alignment", "MVP"],
-    metrics: ["5 Teams", "75% Engagement Lift"],
+    title: "Gartner – Black Employee Network",
+    subtitle: "UK Launch",
+    category: "Employee Community Platform",
+    role: "UK Programme Lead",
+    timeline: "Oct 2024 – Dec 2025",
+    summary: "Launching an employee community network to foster engagement, belonging, and professional growth for Black and ethnic minority associates and allies at Gartner.",
+    tags: ["User Research", "Persona Development", "MVP Design", "Cross-Functional Collaboration"],
+    metrics: ["80+ Active Members", "75% Engagement Lift", "15 mo Duration", "50+ Interviews"],
     color: "from-cream to-sage-light/30",
   },
   {
@@ -73,12 +75,22 @@ export default function CaseStudies() {
                           {study.role}
                         </span>
                       </div>
-                      <h2 className="font-display text-3xl md:text-4xl text-foreground mb-2 group-hover:text-primary transition-colors">
+                      <h2 className="font-display text-3xl md:text-4xl text-foreground mb-1 group-hover:text-primary transition-colors">
                         {study.title}
                       </h2>
-                      <p className="text-primary font-medium text-sm mb-2">
+                      {'subtitle' in study && study.subtitle && (
+                        <p className="font-display text-xl text-muted-foreground italic mb-2">
+                          {study.subtitle}
+                        </p>
+                      )}
+                      <p className="text-primary font-medium text-sm mb-1">
                         {study.category}
                       </p>
+                      {'timeline' in study && study.timeline && (
+                        <p className="text-xs text-muted-foreground mb-3">
+                          {study.timeline}
+                        </p>
+                      )}
                       <p className="text-muted-foreground leading-relaxed mb-6">
                         {study.summary}
                       </p>
