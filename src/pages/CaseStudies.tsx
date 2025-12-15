@@ -5,12 +5,14 @@ import { ArrowUpRight } from "lucide-react";
 const caseStudies = [
   {
     id: "skinsense",
+    badge: "PRODUCT MANAGER",
     title: "SkinSense",
-    category: "AI-Powered Consumer Health Product",
+    subtitle: "AI-Powered Smartwatch Skin Health Companion",
+    category: "End-to-End Product Development",
     role: "Product Manager",
-    summary: "Led discovery, MVP definition, and PRD delivery for an AI smartwatch companion enabling personalised skin health insights.",
+    summary: "Designed an AI-driven smartwatch companion app to help users monitor and improve their skin health through personalized insights, environmental tracking, and health platform integrations.",
     tags: ["User Research", "Prioritisation", "PRD", "MVP Definition"],
-    metrics: ["6 Epics", "19 User Stories"],
+    metrics: ["6 Epics defined", "19 User stories written"],
     color: "from-cream to-sage-light/30",
   },
   {
@@ -75,6 +77,11 @@ export default function CaseStudies() {
                           {study.role}
                         </span>
                       </div>
+                      {'badge' in study && study.badge && (
+                        <span className="inline-block px-2 py-0.5 bg-primary/10 text-primary text-xs font-medium rounded mb-2">
+                          {study.badge}
+                        </span>
+                      )}
                       <h2 className="font-display text-3xl md:text-4xl text-foreground mb-1 group-hover:text-primary transition-colors">
                         {study.title}
                       </h2>
