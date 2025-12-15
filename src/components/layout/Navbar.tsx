@@ -62,7 +62,7 @@ export function Navbar() {
             </Link>
           ))}
           <Button variant="outline" size="sm" asChild>
-            <a href="/Oluchi_Nwabuwa_Resume.pdf" download>
+            <a href="/Oluchi_Nwabuwa_PM_CV.pdf" download>
               Download CV
             </a>
           </Button>
@@ -101,7 +101,7 @@ export function Navbar() {
             </Link>
           ))}
           <Button variant="outline" size="sm" className="w-fit mt-2" asChild>
-            <a href="/Oluchi_Nwabuwa_Resume.pdf" download>
+            <a href="/Oluchi_Nwabuwa_PM_CV.pdf" download>
               Download CV
             </a>
           </Button>
