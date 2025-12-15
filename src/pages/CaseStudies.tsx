@@ -25,12 +25,12 @@ const caseStudies = [
   },
   {
     id: "talent-development",
-    title: "Talent Development & Productivity Optimisation",
-    category: "Operational System Design",
-    role: "Sales Development Manager",
-    summary: "Applied product thinking to design onboarding and coaching workflows, achieving 20% productivity improvement for early-career associates.",
-    tags: ["Systems Thinking", "Workflow Design", "Stakeholder Alignment", "Metrics"],
-    metrics: ["10+ Associates", "20% Productivity Lift"],
+    title: "Scaling Sales Performance: Internal Platform for Associate Onboarding & Productivity",
+    category: "Internal Operations Platform",
+    role: "Product Owner",
+    summary: "Led cross-functional discovery and delivered a scalable internal system for associate development, achieving 65% conversion improvement and $1M+ pipeline generated.",
+    tags: ["Discovery", "Systems Design", "Cross-Functional Leadership", "Metrics"],
+    metrics: ["65% Conversion Lift", "4-Week Ramp Reduction"],
     color: "from-cream to-sage-light/30",
   },
 ];
