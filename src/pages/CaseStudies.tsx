@@ -6,35 +6,32 @@ const caseStudies = [
   {
     id: "skinsense",
     title: "SkinSense",
-    subtitle: "AI-Powered Smartwatch Skin Health Companion",
+    category: "AI-Powered Consumer Health Product",
     role: "Product Manager",
-    status: "6 Features Defined",
-    description: "Designed an AI-driven smartwatch companion app to help users monitor and improve their skin health through personalised insights and HealthKit integrations.",
-    tags: ["User Research", "PRD", "AI/ML", "HealthKit"],
+    summary: "Led discovery, MVP definition, and PRD delivery for an AI smartwatch companion enabling personalised skin health insights.",
+    tags: ["User Research", "Prioritisation", "PRD", "MVP Definition"],
+    metrics: ["6 Epics", "19 User Stories"],
     color: "from-cream to-sage-light/30",
-    metrics: ["19 User Stories", "6 Epics", "6 Features"],
   },
   {
     id: "gartner-ben",
     title: "Gartner BEN Redesign",
-    subtitle: "Community Engagement Platform",
-    role: "UK Programme Lead",
-    status: "75% engagement improvement",
-    description: "Led a product-led initiative to redesign the Gartner BEN community platform, conducting discovery across 5 teams and implementing a new workflow that significantly improved user engagement.",
-    tags: ["Journey Mapping", "Discovery", "MVP", "Stakeholders", "Community"],
+    category: "Internal Community Platform",
+    role: "Product Manager",
+    summary: "Redesigned an internal community platform through cross-functional discovery, delivering an MVP that drove 75% engagement increase.",
+    tags: ["Discovery", "Journey Mapping", "Stakeholder Alignment", "MVP"],
+    metrics: ["5 Teams", "75% Engagement Lift"],
     color: "from-cream to-sage-light/30",
-    metrics: ["5 Teams", "3 Problem Themes", "75% Engagement Lift"],
   },
   {
     id: "talent-development",
     title: "Talent Development & Productivity Optimisation",
-    subtitle: "Enablement & Coaching Program",
+    category: "Operational System Design",
     role: "Sales Development Manager",
-    status: "20% productivity improvement",
-    description: "Built a data-informed enablement and coaching program for early-career associates, improving onboarding consistency, performance visibility, and skill development.",
-    tags: ["User Research", "Workflow Design", "Experimentation", "Metrics", "Stakeholder Alignment"],
+    summary: "Applied product thinking to design onboarding and coaching workflows, achieving 20% productivity improvement for early-career associates.",
+    tags: ["Systems Thinking", "Workflow Design", "Stakeholder Alignment", "Metrics"],
+    metrics: ["10+ Associates", "20% Productivity Lift"],
     color: "from-cream to-sage-light/30",
-    metrics: ["10+ Associates", "20% Productivity Lift", "20% productivity improvement"],
   },
 ];
 
@@ -79,11 +76,11 @@ export default function CaseStudies() {
                       <h2 className="font-display text-3xl md:text-4xl text-foreground mb-2 group-hover:text-primary transition-colors">
                         {study.title}
                       </h2>
-                      <p className="text-muted-foreground font-medium text-lg mb-4">
-                        {study.subtitle}
+                      <p className="text-primary font-medium text-sm mb-2">
+                        {study.category}
                       </p>
                       <p className="text-muted-foreground leading-relaxed mb-6">
-                        {study.description}
+                        {study.summary}
                       </p>
                       <div className="flex flex-wrap gap-2">
                         {study.tags.map((tag) => (
@@ -105,10 +102,7 @@ export default function CaseStudies() {
                           </div>
                         ))}
                       </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-sm text-primary font-medium">
-                          {study.status}
-                        </span>
+                      <div className="flex items-center justify-end">
                         <div className="w-12 h-12 rounded-full bg-foreground flex items-center justify-center group-hover:bg-primary transition-colors">
                           <ArrowUpRight className="text-background" size={20} />
                         </div>
