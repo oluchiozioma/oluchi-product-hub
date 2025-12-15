@@ -33,17 +33,17 @@ const caseStudies = [
   },
   {
     id: "talent-development",
-    title: "Talent Development & Productivity Optimisation",
-    descriptor: "Operational system to improve onboarding, coaching effectiveness, and productivity for early-career sales associates at Gartner.",
-    problem: "New sales associates lacked a consistent onboarding experience, performance visibility, and structured coaching—leading to slow ramp times and uneven productivity.",
-    role: "Led discovery to identify performance gaps, defined success metrics, and designed scalable onboarding and coaching workflows in partnership with sales and enablement stakeholders.",
+    title: "Scaling Sales Performance: Internal Platform for Associate Onboarding & Productivity",
+    descriptor: "Cross-functional product initiative to design and optimize an internal system for early-career sales associate development, reducing ramp time and driving measurable productivity gains at Gartner.",
+    problem: "Early-career sales associates faced fragmented onboarding experiences, limited performance visibility, and inconsistent coaching frameworks—resulting in 8-week ramp times and 35% lower conversion rates compared to tenured reps.",
+    role: "Product Owner & Cross-Functional Lead: Led discovery across 3 regions, defined success metrics, designed scalable workflows and coaching protocols, and acted as voice of the user to senior leadership.",
     highlights: [
-      "Identified performance gaps through qualitative feedback and performance data",
-      "Designed and iterated on onboarding and coaching workflows",
-      "Aligned stakeholders across sales leadership and enablement",
-      "Implemented improvements to increase productivity and engagement"
+      "Led discovery with 20+ user research sessions to map pain points and identify systemic friction",
+      "Designed scalable onboarding workflow with milestone-based progression and real-time performance visibility",
+      "Implemented data-driven incentive system and structured coaching framework with feedback loops",
+      "Delivered 65% improvement in conversion rates and reduced ramp time from 8 weeks to 4 weeks"
     ],
-    impact: "20% productivity increase",
+    impact: "65% conversion improvement, 20% productivity increase, $1M+ pipeline generated",
   },
 ];
 

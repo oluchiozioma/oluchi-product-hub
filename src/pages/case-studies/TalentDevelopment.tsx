@@ -4,65 +4,65 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 
 const keyMetrics = [
-  { value: "10+", label: "Associates" },
-  { value: "20%", label: "Productivity Lift" },
-  { value: "1", label: "Quarter" },
-  { value: "5", label: "Key Initiatives" },
+  { value: "65%", label: "Conversion Improvement" },
+  { value: "4 Weeks", label: "Ramp Reduction" },
+  { value: "$1M+", label: "Pipeline Generated" },
+  { value: "3", label: "Regions" },
 ];
 
 const discoveryMethods = [
   {
-    title: "Interviews",
-    description: "Conducted one-on-one interviews with associates and sales leaders to understand pain points and challenges.",
+    title: "User Research",
+    description: "Conducted 20+ 1:1 sessions with associates and front-line sellers across 3 regions to map the current-state journey and identify pain points.",
     icon: Users,
   },
   {
-    title: "Journey Mapping",
-    description: "Mapped the associate onboarding and ramp journey to identify friction points and drop-off moments.",
+    title: "Performance Analysis",
+    description: "Analyzed performance data across cohorts to identify pipeline bottlenecks and conversion drop-off points.",
+    icon: BarChart3,
+  },
+  {
+    title: "Persona Development",
+    description: "Created user personas for different learning styles and experience levels to inform solution design.",
     icon: Target,
   },
   {
-    title: "Workflow Audits",
-    description: "Audited existing workflows and processes to uncover inefficiencies and gaps in the enablement program.",
+    title: "Cross-Functional Workshops",
+    description: "Led alignment workshops with Business Development, Account Management, and Sales Enablement teams to prioritize initiatives.",
     icon: Settings,
-  },
-  {
-    title: "Metrics Analysis",
-    description: "Analysed performance data to establish baselines and identify patterns in productivity and ramp time.",
-    icon: BarChart3,
   },
 ];
 
 const insights = [
-  "Associates struggled to prioritise outreach tasks effectively",
-  "Coaching was reactive rather than structured and proactive",
-  "Performance data was fragmented across multiple systems",
-  "No standardised productivity framework existed for measurement",
+  "Lack of real-time feedback loops and unclear success criteria caused 60% of early-stage struggles",
+  "Fragmented onboarding experiences led to 8-week ramp times and unpredictable pipeline contribution",
+  "35% lower conversion rates compared to tenured reps due to inconsistent coaching frameworks",
+  "No standardised performance visibility or accountability mechanisms existed",
 ];
 
 const solutions = [
-  "Standardised onboarding workflow with clear milestones",
-  "Weekly coaching framework with structured feedback loops",
-  "Personalised performance dashboards for visibility",
-  "Outreach strategy experiments to optimise approaches",
-  "Feedback loops with sales leaders for continuous improvement",
+  "Scalable onboarding workflow with milestone-based progression",
+  "Real-time performance visibility dashboard for transparency and accountability",
+  "Structured coaching framework with feedback loops",
+  "Data-driven incentive system tied to leading and lagging indicators",
+  "Iterative feedback cycles: weekly retrospectives with users, bi-weekly stakeholder check-ins",
 ];
 
 const skills = [
-  "User research",
-  "Workflow design",
-  "Data analysis",
-  "Experimentation",
-  "Stakeholder alignment",
-  "Coaching and enablement",
+  "Discovery & User Research",
+  "Systems Design",
+  "Cross-Functional Leadership",
+  "Prioritisation Frameworks",
+  "Stakeholder Alignment",
+  "Metrics & Experimentation",
 ];
 
 const focusTags = [
-  "User research",
-  "Problem definition",
-  "Workflow design",
-  "Experimentation",
-  "Metrics driven decision making",
+  "Discovery",
+  "Systems Thinking",
+  "Cross-Functional Delivery",
+  "Iteration & Experimentation",
+  "Measurable Impact",
 ];
 
 const TalentDevelopment = () => {
@@ -84,15 +84,15 @@ const TalentDevelopment = () => {
                 <Users className="text-primary" size={24} />
               </div>
               <p className="text-primary font-medium tracking-wider uppercase text-sm">
-                Sales Development Manager
+                Product Owner & Cross-Functional Lead
               </p>
             </div>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-tight mb-6">
-              Talent Development & Productivity Optimisation
+              Scaling Sales Performance: Internal Platform for Associate Onboarding & Productivity
             </h1>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8 max-w-3xl">
-              As a Sales Development Manager, I led a team of early-career associates and built a 
-              data-informed program to improve onboarding consistency, productivity, and skill development.
+              Cross-functional product initiative to design and optimize an internal system for early-career 
+              sales associate development, reducing ramp time and driving measurable productivity gains at Gartner.
             </p>
             
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
@@ -115,8 +115,10 @@ const TalentDevelopment = () => {
               Problem
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Onboarding was inconsistent, performance visibility was fragmented, and coaching lacked 
-              structure—resulting in slow ramp times and uneven productivity across the team.
+              Early-career sales associates faced fragmented onboarding experiences, limited performance visibility, 
+              and inconsistent coaching frameworks—resulting in 8-week ramp times, unpredictable pipeline contribution, 
+              and 35% lower conversion rates compared to tenured reps. Leadership needed a scalable solution to 
+              accelerate time-to-productivity while maintaining quality.
             </p>
           </div>
         </div>
@@ -129,8 +131,8 @@ const TalentDevelopment = () => {
             Discovery
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8 max-w-3xl">
-            I conducted interviews, journey mapping, workflow audits, and metrics analysis to identify 
-            bottlenecks and pain points in the existing enablement process.
+            Led continuous user research through 20+ sessions with associates and front-line sellers to map 
+            the current-state journey and identify systemic friction points across 3 regions.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {discoveryMethods.map((method) => (
@@ -204,8 +206,9 @@ const TalentDevelopment = () => {
               My Role
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              I owned discovery, alignment, workflow design, experimentation, and delivery—acting 
-              as the product owner for the improvement program.
+              Led discovery across 3 regions with 10+ associates and sales stakeholders to identify systemic friction points. 
+              Defined success metrics in partnership with sales leadership, designed scalable workflows and coaching protocols, 
+              and acted as voice of the user to senior leadership, advocating for resource allocation and process improvements.
             </p>
             <div className="flex flex-wrap gap-3">
               {skills.map((skill) => (
@@ -227,10 +230,12 @@ const TalentDevelopment = () => {
           <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">
             Impact
           </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
-            Reduced ramp time and improved team productivity by <span className="text-primary font-semibold">20%</span> within 
-            one quarter, while strengthening alignment with sales leaders.
-          </p>
+          <div className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto space-y-4">
+            <p><span className="text-primary font-semibold">65%</span> improvement in conversion rates through iterative strategy optimization</p>
+            <p><span className="text-primary font-semibold">20%</span> productivity increase across team measured quarter-over-quarter</p>
+            <p>Reduced ramp time by <span className="text-primary font-semibold">4 weeks</span> (from 8 weeks to 4 weeks)</p>
+            <p><span className="text-primary font-semibold">$1M+</span> in pipeline generated from improved outreach effectiveness</p>
+          </div>
         </div>
       </section>
 
@@ -242,12 +247,10 @@ const TalentDevelopment = () => {
             Summary
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto mb-8">
-            This project demonstrates my ability to apply product thinking to complex operational 
-            problems by identifying root causes, validating assumptions, and delivering structured 
-            solutions. By treating associate onboarding, productivity, and coaching as a problem 
-            space, I used discovery, metrics, and iteration to design and implement a scalable 
-            enablement program. The result was improved performance visibility, faster ramp times, 
-            and stronger alignment between associates and frontline sales leadership.
+            This case study demonstrates product management applied to operational systems: conducting discovery 
+            to understand user needs, defining success metrics with stakeholders, prioritizing competing initiatives, 
+            iterating based on data, and delivering measurable business impact—all core PM competencies applied 
+            to an internal platform context.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {focusTags.map((tag) => (
