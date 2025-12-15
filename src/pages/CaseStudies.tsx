@@ -8,11 +8,11 @@ const caseStudies = [
     title: "SkinSense",
     subtitle: "AI-Powered Smartwatch Skin Health Companion",
     role: "Product Manager",
-    status: "6 P0 Features Defined",
+    status: "6 Features Defined",
     description: "Designed an AI-driven smartwatch companion app to help users monitor and improve their skin health through personalised insights and HealthKit integrations.",
     tags: ["User Research", "PRD", "AI/ML", "HealthKit"],
     color: "from-sage/20 to-sage-light/40",
-    metrics: ["19 User Stories", "6 Epics", "6 P0 Features"],
+    metrics: ["19 User Stories", "6 Epics", "6 Features"],
   },
   {
     id: "gartner-ben",
@@ -34,7 +34,7 @@ const caseStudies = [
     description: "Built a data-informed enablement and coaching program for early-career associates, improving onboarding consistency, performance visibility, and skill development.",
     tags: ["User Research", "Workflow Design", "Experimentation", "Metrics", "Stakeholder Alignment"],
     color: "from-amber-500/10 to-sage-light/30",
-    metrics: ["10+ Associates", "1 Quarter", "20% Productivity Lift"],
+    metrics: ["10+ Associates", "20% Productivity Lift"],
   },
 ];
 
