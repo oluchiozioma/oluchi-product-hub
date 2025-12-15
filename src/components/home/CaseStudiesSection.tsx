@@ -5,17 +5,19 @@ import { Button } from "@/components/ui/button";
 const caseStudies = [
   {
     id: "skinsense",
+    badge: "PRODUCT MANAGER",
     title: "SkinSense",
-    descriptor: "AI-powered smartwatch companion for proactive skin health monitoring.",
+    subtitle: "AI-Powered Smartwatch Skin Health Companion",
+    descriptor: "Designed an AI-driven smartwatch companion app to help users monitor and improve their skin health through personalized insights, environmental tracking, and health platform integrations.",
     problem: "Millions of people struggle with skin health issues but lack accessible, personalised tools to track and understand their skin.",
-    role: "Product Manager leading user research, MVP definition, prioritisation, and PRD delivery.",
+    role: "Product Manager leading end-to-end product development from 0 to MVP.",
     highlights: [
       "Conducted qualitative and quantitative user research to uncover unmet needs",
       "Defined MVP scope using 6 epics and 19 user stories",
       "Applied RICE prioritisation to focus on highest-impact features",
       "Delivered a structured PRD to guide cross-functional execution"
     ],
-    impact: "Defined a validated MVP enabling personalised skin health insights and daily tracking.",
+    impact: "6 Epics defined · 19 User stories written",
   },
   {
     id: "gartner-ben",
@@ -85,14 +87,28 @@ export function CaseStudiesSection() {
             >
               <article className="h-full bg-background rounded-2xl p-6 md:p-8 border border-border/50 hover:border-primary/30 hover:shadow-elegant transition-all duration-300">
                 <div className="flex flex-col h-full">
+                  {/* Badge */}
+                  {'badge' in study && (
+                    <span className="inline-block px-2 py-0.5 bg-primary/10 text-primary text-xs font-medium rounded mb-2">
+                      {study.badge}
+                    </span>
+                  )}
+                  
                   {/* Title */}
-                  <h3 className="font-display text-xl md:text-2xl text-foreground mb-2 group-hover:text-primary transition-colors">
+                  <h3 className="font-display text-xl md:text-2xl text-foreground mb-1 group-hover:text-primary transition-colors">
                     {study.title}
                   </h3>
                   
+                  {/* Subtitle (if available) */}
+                  {'subtitle' in study && (
+                    <p className="font-display text-base text-muted-foreground italic mb-2">
+                      {study.subtitle}
+                    </p>
+                  )}
+                  
                   {/* Descriptor (if available) */}
                   {'descriptor' in study && (
-                    <p className="text-muted-foreground text-sm mb-4 italic">
+                    <p className="text-muted-foreground text-sm mb-4">
                       {study.descriptor}
                     </p>
                   )}
