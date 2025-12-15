@@ -9,7 +9,7 @@ const caseStudies = [
     problem: "Users lacked accessible, personalised guidance to understand and manage skin conditions proactively.",
     role: "Owned end-to-end product discovery, defined MVP scope, and created PRD with prioritised requirements.",
     skills: ["User Research", "Journey Mapping", "RICE Prioritisation", "PRD Creation", "MVP Scoping"],
-    impact: "19 User Stories • 6 P0 Features",
+    impact: "19 User Stories • 6 Epics",
   },
   {
     id: "gartner-ben",
