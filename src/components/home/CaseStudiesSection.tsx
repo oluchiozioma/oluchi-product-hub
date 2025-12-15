@@ -6,30 +6,44 @@ const caseStudies = [
   {
     id: "skinsense",
     title: "SkinSense",
-    descriptor: "AI-powered smartwatch companion for proactive skin health monitoring",
-    problem: "Users lacked accessible, personalised tools to understand and track skin health.",
-    role: "Product Manager leading end-to-end discovery, MVP definition, and PRD delivery.",
+    descriptor: "AI-powered smartwatch companion for proactive skin health monitoring.",
+    problem: "Millions of people struggle with skin health issues but lack accessible, personalised tools to track and understand their skin.",
+    role: "Product Manager leading user research, MVP definition, prioritisation, and PRD delivery.",
     highlights: [
-      "User research through focus groups and surveys",
-      "6 epics and 19 user stories defining MVP scope",
-      "RICE prioritisation to identify highest-impact features"
+      "Conducted qualitative and quantitative user research to uncover unmet needs",
+      "Defined MVP scope using 6 epics and 19 user stories",
+      "Applied RICE prioritisation to focus on highest-impact features",
+      "Delivered a structured PRD to guide cross-functional execution"
     ],
+    impact: "Defined a validated MVP enabling personalised skin health insights and daily tracking.",
   },
   {
     id: "gartner-ben",
     title: "Gartner BEN Redesign",
+    descriptor: "Internal community platform to support connection, career growth, and engagement for Black and ethnic minority associates at Gartner.",
     problem: "Black and ethnic minority associates had no dedicated platform for community connection and career growth.",
-    role: "Led discovery research, defined personas, and delivered community engagement MVP through cross-functional collaboration.",
-    skills: ["Discovery", "Persona Development", "Stakeholder Management", "MVP Delivery", "Metrics Definition"],
-    impact: "75% Engagement Increase",
+    role: "Product Manager leading discovery research, persona definition, and MVP delivery through cross-functional collaboration.",
+    highlights: [
+      "Conducted user interviews and stakeholder discovery research",
+      "Defined personas and user journeys to guide solution design",
+      "Delivered an MVP platform to support community engagement",
+      "Partnered with engineering, design, and internal stakeholders to launch"
+    ],
+    impact: "75% engagement increase",
   },
   {
     id: "talent-development",
     title: "Talent Development & Productivity Optimisation",
+    descriptor: "Operational system to improve onboarding, coaching effectiveness, and productivity for early-career sales associates at Gartner.",
     problem: "New sales associates lacked a consistent onboarding experience, performance visibility, and structured coaching—leading to slow ramp times and uneven productivity.",
-    role: "Built a data-informed enablement and coaching program for 10+ early-career associates, including defining problem areas through discovery, aligning with stakeholders, creating workflows, and implementing improvements that increased productivity and engagement.",
-    skills: ["User Research", "Workflow Design", "Process Optimisation", "Metrics Definition", "Stakeholder Alignment", "Experimentation"],
-    impact: "20% Productivity Increase",
+    role: "Led discovery to identify performance gaps, defined success metrics, and designed scalable onboarding and coaching workflows in partnership with sales and enablement stakeholders.",
+    highlights: [
+      "Identified performance gaps through qualitative feedback and performance data",
+      "Designed and iterated on onboarding and coaching workflows",
+      "Aligned stakeholders across sales leadership and enablement",
+      "Implemented improvements to increase productivity and engagement"
+    ],
+    impact: "20% productivity increase",
   },
 ];
 
@@ -98,60 +112,31 @@ export function CaseStudiesSection() {
                     </p>
                   </div>
                   
-                  {/* Key Highlights or Skills Used */}
+                  {/* Key Highlights */}
                   <div className="mb-5 flex-1">
-                    {'highlights' in study ? (
-                      <>
-                        <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Key Highlights</p>
-                        <ul className="space-y-1.5">
-                          {study.highlights.map((highlight, idx) => (
-                            <li key={idx} className="text-muted-foreground text-sm leading-relaxed flex items-start gap-2">
-                              <span className="text-primary mt-1">•</span>
-                              {highlight}
-                            </li>
-                          ))}
-                        </ul>
-                      </>
-                    ) : (
-                      <>
-                        <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Skills Used</p>
-                        <div className="flex flex-wrap gap-1.5">
-                          {study.skills.map((skill) => (
-                            <span
-                              key={skill}
-                              className="px-2.5 py-1 bg-primary/10 rounded-full text-xs text-foreground/80"
-                            >
-                              {skill}
-                            </span>
-                          ))}
-                        </div>
-                      </>
-                    )}
+                    <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Key Highlights</p>
+                    <ul className="space-y-1.5">
+                      {study.highlights.map((highlight, idx) => (
+                        <li key={idx} className="text-muted-foreground text-sm leading-relaxed flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          {highlight}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                   
-                  {/* Impact (only for cards with impact) */}
-                  {'impact' in study && (
-                    <div className="pt-4 border-t border-border/50 flex items-center justify-between">
-                      <div>
-                        <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Impact</p>
-                        <p className="text-foreground font-bold text-sm">
-                          {study.impact}
-                        </p>
-                      </div>
-                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
-                        <ArrowUpRight className="text-primary group-hover:text-background transition-colors" size={18} />
-                      </div>
+                  {/* Impact */}
+                  <div className="pt-4 border-t border-border/50 flex items-center justify-between">
+                    <div>
+                      <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Impact</p>
+                      <p className="text-foreground font-bold text-sm">
+                        {study.impact}
+                      </p>
                     </div>
-                  )}
-                  
-                  {/* Arrow for highlight-based cards */}
-                  {'highlights' in study && (
-                    <div className="pt-4 border-t border-border/50 flex justify-end">
-                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
-                        <ArrowUpRight className="text-primary group-hover:text-background transition-colors" size={18} />
-                      </div>
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
+                      <ArrowUpRight className="text-primary group-hover:text-background transition-colors" size={18} />
                     </div>
-                  )}
+                  </div>
                 </div>
               </article>
             </Link>
