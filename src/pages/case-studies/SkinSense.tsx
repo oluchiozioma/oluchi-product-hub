@@ -14,7 +14,6 @@ const keyMetrics = [
 const deliverables = [
   "Product Requirements Document (PRD)",
   "Interactive Prototype",
-  "Interactive Prototype",
   "RICE Prioritisation Model",
   "User Personas & Journey Maps",
   "Competitive Analysis",
