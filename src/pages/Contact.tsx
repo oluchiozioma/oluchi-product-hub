@@ -87,7 +87,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                  href="/Oluchi_Nwabuwa_Resume.pdf"
+                  href="/Oluchi_Nwabuwa_PM_CV.pdf"
                   download
                   className="flex items-center justify-between group py-4"
                 >
