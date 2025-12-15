@@ -11,7 +11,7 @@ const caseStudies = [
     status: "6 Features Defined",
     description: "Designed an AI-driven smartwatch companion app to help users monitor and improve their skin health through personalised insights and HealthKit integrations.",
     tags: ["User Research", "PRD", "AI/ML", "HealthKit"],
-    color: "from-sage/20 to-sage-light/40",
+    color: "from-cream to-sage-light/30",
     metrics: ["19 User Stories", "6 Epics", "6 Features"],
   },
   {
@@ -22,7 +22,7 @@ const caseStudies = [
     status: "75% engagement improvement",
     description: "Led a product-led initiative to redesign the Gartner BEN community platform, conducting discovery across 5 teams and implementing a new workflow that significantly improved user engagement.",
     tags: ["Journey Mapping", "Discovery", "MVP", "Stakeholders", "Community"],
-    color: "from-primary/10 to-sage-light/30",
+    color: "from-cream to-sage-light/30",
     metrics: ["5 Teams", "3 Problem Themes", "75% Engagement Lift"],
   },
   {
@@ -33,8 +33,8 @@ const caseStudies = [
     status: "20% productivity improvement",
     description: "Built a data-informed enablement and coaching program for early-career associates, improving onboarding consistency, performance visibility, and skill development.",
     tags: ["User Research", "Workflow Design", "Experimentation", "Metrics", "Stakeholder Alignment"],
-    color: "from-amber-500/10 to-sage-light/30",
-    metrics: ["10+ Associates", "20% Productivity Lift"],
+    color: "from-cream to-sage-light/30",
+    metrics: ["10+ Associates", "20% Productivity Lift", "20% productivity improvement"],
   },
 ];
 
