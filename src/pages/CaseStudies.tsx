@@ -25,6 +25,17 @@ const caseStudies = [
     color: "from-primary/10 to-sage-light/30",
     metrics: ["5 Teams", "3 Problem Themes", "75% Engagement Lift"],
   },
+  {
+    id: "talent-development",
+    title: "Talent Development & Productivity Optimisation",
+    subtitle: "Enablement & Coaching Program",
+    role: "Sales Development Manager",
+    status: "20% productivity improvement",
+    description: "Built a data-informed enablement and coaching program for early-career associates, improving onboarding consistency, performance visibility, and skill development.",
+    tags: ["User Research", "Workflow Design", "Experimentation", "Metrics", "Stakeholder Alignment"],
+    color: "from-amber-500/10 to-sage-light/30",
+    metrics: ["10+ Associates", "1 Quarter", "20% Productivity Lift"],
+  },
 ];
 
 export default function CaseStudies() {
