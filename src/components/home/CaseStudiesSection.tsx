@@ -19,17 +19,18 @@ const caseStudies = [
   },
   {
     id: "gartner-ben",
-    title: "Gartner BEN Redesign",
-    descriptor: "Internal community platform to support connection, career growth, and engagement for Black and ethnic minority associates at Gartner.",
-    problem: "Black and ethnic minority associates had no dedicated platform for community connection and career growth.",
-    role: "Product Manager leading discovery research, persona definition, and MVP delivery through cross-functional collaboration.",
+    title: "Gartner – Black Employee Network",
+    subtitle: "UK Launch",
+    descriptor: "Launching an employee community network to foster engagement, belonging, and professional growth for Black and ethnic minority associates and allies at Gartner.",
+    problem: "London associates lacked a formal community to connect, grow, and advocate for one another—missing opportunities for mentorship, networking, and career advancement.",
+    role: "UK Programme Lead applying product thinking to community platform development: discovery, persona definition, MVP delivery, and cross-functional collaboration.",
     highlights: [
-      "Conducted user interviews and stakeholder discovery research",
-      "Defined personas and user journeys to guide solution design",
-      "Delivered an MVP platform to support community engagement",
-      "Partnered with engineering, design, and internal stakeholders to launch"
+      "Conducted 50+ stakeholder interviews and surveys to understand needs and barriers",
+      "Developed representative personas to guide community design and programming",
+      "Designed and launched MVP community offerings with quarterly events and mentorship",
+      "Secured funding and leadership buy-in through data-informed proposals"
     ],
-    impact: "75% engagement increase",
+    impact: "80+ members, 75% engagement lift",
   },
   {
     id: "talent-development",
