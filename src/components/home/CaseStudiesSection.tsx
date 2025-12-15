@@ -6,10 +6,14 @@ const caseStudies = [
   {
     id: "skinsense",
     title: "SkinSense",
-    problem: "Users lacked accessible, personalised guidance to understand and manage skin conditions proactively.",
-    role: "Owned end-to-end product discovery, defined MVP scope, and created PRD with prioritised requirements.",
-    skills: ["User Research", "Journey Mapping", "RICE Prioritisation", "PRD Creation", "MVP Scoping"],
-    impact: "19 User Stories • 6 Epics",
+    descriptor: "AI-powered smartwatch companion for proactive skin health monitoring",
+    problem: "Users lacked accessible, personalised tools to understand and track skin health.",
+    role: "Product Manager leading end-to-end discovery, MVP definition, and PRD delivery.",
+    highlights: [
+      "User research through focus groups and surveys",
+      "6 epics and 19 user stories defining MVP scope",
+      "RICE prioritisation to identify highest-impact features"
+    ],
   },
   {
     id: "gartner-ben",
@@ -67,9 +71,16 @@ export function CaseStudiesSection() {
               <article className="h-full bg-background rounded-2xl p-6 md:p-8 border border-border/50 hover:border-primary/30 hover:shadow-elegant transition-all duration-300">
                 <div className="flex flex-col h-full">
                   {/* Title */}
-                  <h3 className="font-display text-xl md:text-2xl text-foreground mb-5 group-hover:text-primary transition-colors">
+                  <h3 className="font-display text-xl md:text-2xl text-foreground mb-2 group-hover:text-primary transition-colors">
                     {study.title}
                   </h3>
+                  
+                  {/* Descriptor (if available) */}
+                  {'descriptor' in study && (
+                    <p className="text-muted-foreground text-sm mb-4 italic">
+                      {study.descriptor}
+                    </p>
+                  )}
                   
                   {/* Problem */}
                   <div className="mb-4">
@@ -87,33 +98,60 @@ export function CaseStudiesSection() {
                     </p>
                   </div>
                   
-                  {/* Skills Used */}
+                  {/* Key Highlights or Skills Used */}
                   <div className="mb-5 flex-1">
-                    <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Skills Used</p>
-                    <div className="flex flex-wrap gap-1.5">
-                      {study.skills.map((skill) => (
-                        <span
-                          key={skill}
-                          className="px-2.5 py-1 bg-primary/10 rounded-full text-xs text-foreground/80"
-                        >
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
+                    {'highlights' in study ? (
+                      <>
+                        <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Key Highlights</p>
+                        <ul className="space-y-1.5">
+                          {study.highlights.map((highlight, idx) => (
+                            <li key={idx} className="text-muted-foreground text-sm leading-relaxed flex items-start gap-2">
+                              <span className="text-primary mt-1">•</span>
+                              {highlight}
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    ) : (
+                      <>
+                        <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Skills Used</p>
+                        <div className="flex flex-wrap gap-1.5">
+                          {study.skills.map((skill) => (
+                            <span
+                              key={skill}
+                              className="px-2.5 py-1 bg-primary/10 rounded-full text-xs text-foreground/80"
+                            >
+                              {skill}
+                            </span>
+                          ))}
+                        </div>
+                      </>
+                    )}
                   </div>
                   
-                  {/* Impact */}
-                  <div className="pt-4 border-t border-border/50 flex items-center justify-between">
-                    <div>
-                      <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Impact</p>
-                      <p className="text-foreground font-bold text-sm">
-                        {study.impact}
-                      </p>
+                  {/* Impact (only for cards with impact) */}
+                  {'impact' in study && (
+                    <div className="pt-4 border-t border-border/50 flex items-center justify-between">
+                      <div>
+                        <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Impact</p>
+                        <p className="text-foreground font-bold text-sm">
+                          {study.impact}
+                        </p>
+                      </div>
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
+                        <ArrowUpRight className="text-primary group-hover:text-background transition-colors" size={18} />
+                      </div>
                     </div>
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
-                      <ArrowUpRight className="text-primary group-hover:text-background transition-colors" size={18} />
+                  )}
+                  
+                  {/* Arrow for highlight-based cards */}
+                  {'highlights' in study && (
+                    <div className="pt-4 border-t border-border/50 flex justify-end">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
+                        <ArrowUpRight className="text-primary group-hover:text-background transition-colors" size={18} />
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </article>
             </Link>
