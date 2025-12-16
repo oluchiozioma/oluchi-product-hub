@@ -33,7 +33,7 @@ const caseStudies = [
     role: "Product Owner",
     summary: "Led cross-functional discovery and delivered a scalable internal system for associate development, achieving 65% conversion improvement and $1M+ pipeline generated.",
     tags: ["Discovery", "Systems Design", "Cross-Functional Leadership", "Metrics"],
-    metrics: ["65% Conversion Lift", "4-Week Ramp Reduction"],
+    metrics: ["65% Conversion Lift", "4-Week Ramp Reduction", "20% Productivity Increase"],
     color: "from-cream to-sage-light/30",
   },
 ];
