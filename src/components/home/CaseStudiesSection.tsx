@@ -31,7 +31,7 @@ const caseStudies = [
       "Designed and launched MVP community offerings with quarterly events and mentorship",
       "Secured funding and leadership buy-in through data-informed proposals"
     ],
-    impact: "80+ members, 75% engagement lift",
+    impact: "80+ active members, 75% engagement lift",
   },
   {
     id: "talent-development",
