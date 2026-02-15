@@ -13,21 +13,21 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
             <p className="text-primary font-medium tracking-wider uppercase text-sm mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-              Product Manager
+              Product Manager — Fintech & Transaction Products
             </p>
             
             <h1 
               className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.1] mb-6 animate-fade-up"
               style={{ animationDelay: "0.2s" }}
             >
-              Product Manager turning customer insight into real-world solutions.
+              Product Manager building seamless payment and transaction experiences from customer insight.
             </h1>
             
             <p 
               className="text-muted-foreground text-lg md:text-xl max-w-2xl mb-12 leading-relaxed animate-fade-up"
               style={{ animationDelay: "0.3s" }}
             >
-              Hi, I'm <span className="text-foreground font-medium">Oluchi</span>. I am a Tech Sales Leader transitioning into Product Management. I blend customer insight, problem framing, and cross-functional collaboration to build products that deliver measurable value. With a background in uncovering user pain points and driving business outcomes, I bring a strong foundation in discovery, prioritization, and outcome-focused thinking.
+              Hi, I'm <span className="text-foreground font-medium">Oluchi</span>, a Product Manager focused on fintech and transaction products. I support delivery of payment and transaction flows, translate business needs into product requirements, and collaborate with cross-functional teams to improve user journeys. I'm passionate about building scalable financial products for emerging markets.
             </p>
             
             <div 
