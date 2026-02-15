@@ -4,6 +4,22 @@ import { Button } from "@/components/ui/button";
 
 const caseStudies = [
   {
+    id: "paystro",
+    title: "Paystro",
+    subtitle: "Cross-Border Payments & Transaction Platform",
+    descriptor: "Owned the strategy and execution for structuring product documentation and transaction flow visibility across onboarding, KYC, and payment experiences within a fintech platform, enabling smoother cross-team collaboration and supporting delivery of features aimed at improving user acquisition.",
+    problem: "As product complexity grew, teams lacked clear documentation and visibility into transaction flows, payment eligibility rules, and operational processes, creating inefficiencies in delivering and supporting new features aimed at increasing user acquisition.",
+    role: "Product Manager owning product documentation and flow visibility strategy while supporting requirements definition and optimisation of onboarding and payment experiences across cross-functional teams.",
+    highlights: [
+      "Owned strategy for documenting onboarding, KYC, money transfer, bill payment, and marketplace transaction flows",
+      "Defined payment method eligibility rules based on location and compliance requirements",
+      "Built internal product wiki improving product knowledge sharing across teams",
+      "Documented end-to-end transaction lifecycle flows supporting engineering and operations delivery",
+      "Identified improvement opportunities and edge cases across onboarding and payment journeys"
+    ],
+    impact: "Improved internal product clarity, 30% increase in user acquisition",
+  },
+  {
     id: "skinsense",
     title: "SkinSense",
     subtitle: "AI-Powered Smartwatch Skin Health Companion",
@@ -46,22 +62,6 @@ const caseStudies = [
       "Delivered 65% improvement in conversion rates and reduced ramp time from 8 weeks to 4 weeks"
     ],
     impact: "65% conversion improvement, 20% productivity increase, $1M+ pipeline generated",
-  },
-  {
-    id: "paystro",
-    title: "Paystro",
-    subtitle: "Cross-Border Payments & Transaction Platform",
-    descriptor: "Owned the strategy and execution for structuring product documentation and transaction flow visibility across onboarding, KYC, and payment experiences within a fintech platform, enabling smoother cross-team collaboration and supporting delivery of features aimed at improving user acquisition.",
-    problem: "As product complexity grew, teams lacked clear documentation and visibility into transaction flows, payment eligibility rules, and operational processes, creating inefficiencies in delivering and supporting new features aimed at increasing user acquisition.",
-    role: "Product Manager owning product documentation and flow visibility strategy while supporting requirements definition and optimisation of onboarding and payment experiences across cross-functional teams.",
-    highlights: [
-      "Owned strategy for documenting onboarding, KYC, money transfer, bill payment, and marketplace transaction flows",
-      "Defined payment method eligibility rules based on location and compliance requirements",
-      "Built internal product wiki improving product knowledge sharing across teams",
-      "Documented end-to-end transaction lifecycle flows supporting engineering and operations delivery",
-      "Identified improvement opportunities and edge cases across onboarding and payment journeys"
-    ],
-    impact: "Improved internal product clarity, 30% increase in user acquisition",
   },
 ];
 
