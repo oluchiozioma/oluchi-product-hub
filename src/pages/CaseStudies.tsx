@@ -4,6 +4,17 @@ import { ArrowUpRight } from "lucide-react";
 
 const caseStudies = [
   {
+    id: "paystro",
+    title: "Paystro",
+    subtitle: "Cross-Border Payments & Transaction Platform",
+    category: "Fintech Product Management",
+    role: "Product Manager",
+    summary: "Owned strategy for structuring product documentation and transaction flow visibility across onboarding, KYC, and payment experiences, supporting delivery of features linked to a 30% increase in user acquisition.",
+    tags: ["Product Documentation", "Transaction Flows", "KYC", "Cross-Functional Collaboration", "Fintech"],
+    metrics: ["30% User Acquisition Increase", "Product Wiki Built", "End-to-End Flow Documentation"],
+    color: "from-cream to-sage-light/30",
+  },
+  {
     id: "skinsense",
     title: "SkinSense",
     subtitle: "AI-Powered Smartwatch Skin Health Companion",
@@ -34,17 +45,6 @@ const caseStudies = [
     summary: "Led cross-functional discovery and delivered a scalable internal system for associate development, achieving 65% conversion improvement and $1M+ pipeline generated.",
     tags: ["Discovery", "Systems Design", "Cross-Functional Leadership", "Metrics"],
     metrics: ["65% Conversion Lift", "4-Week Ramp Reduction", "20% Productivity Increase"],
-    color: "from-cream to-sage-light/30",
-  },
-  {
-    id: "paystro",
-    title: "Paystro",
-    subtitle: "Cross-Border Payments & Transaction Platform",
-    category: "Fintech Product Management",
-    role: "Product Manager",
-    summary: "Owned strategy for structuring product documentation and transaction flow visibility across onboarding, KYC, and payment experiences, supporting delivery of features linked to a 30% increase in user acquisition.",
-    tags: ["Product Documentation", "Transaction Flows", "KYC", "Cross-Functional Collaboration", "Fintech"],
-    metrics: ["30% User Acquisition Increase", "Product Wiki Built", "End-to-End Flow Documentation"],
     color: "from-cream to-sage-light/30",
   },
 ];
