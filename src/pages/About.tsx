@@ -72,7 +72,7 @@ export default function About() {
                 Hi, I'm Oluchi.
               </h1>
               <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
-                I am a Tech Sales Leader transitioning into Product Management. I blend customer insight, problem framing, and cross-functional collaboration to build products that deliver measurable value.
+                I am a Product Manager focused on fintech and transaction products, supporting delivery of payment and transaction flows within cross-functional teams. I translate business and operational needs into product requirements and help improve user journeys across onboarding and transaction experiences.
               </p>
             </div>
             
