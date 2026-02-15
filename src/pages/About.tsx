@@ -33,26 +33,26 @@ const values = [
 const journeyMilestones = [
   {
     icon: Briefcase,
-    title: "Tech Sales & Account Management",
-    description: "Built a strong foundation in understanding users, identifying root problems, and collaborating with stakeholders to deliver solutions that achieve business results.",
+    title: "Commercial & Account Management Foundations",
+    description: "Built a strong foundation in understanding customer needs, identifying root business problems, and collaborating with stakeholders to deliver solutions that achieved commercial outcomes and improved user experiences.",
     color: "bg-primary/10 text-primary",
   },
   {
     icon: Lightbulb,
-    title: "Discovery of Product Thinking",
-    description: "Realised the moments that energised me most were breaking down user problems, asking purposeful questions, and shaping solutions that created real impact.",
+    title: "Transition into Product Thinking",
+    description: "Discovered a passion for breaking down user and business problems, asking better questions, and shaping structured solutions — leading to a transition into product management and cross-functional product delivery.",
     color: "bg-sage/20 text-sage-dark",
   },
   {
     icon: Rocket,
-    title: "Building SkinSense",
-    description: "Created an AI-powered smartwatch skin health companion—owning user research, persona definition, RICE prioritisation, MVP scoping, and PRD creation.",
+    title: "Delivering Product MVPs",
+    description: "Led product discovery and MVP definition for new digital products, conducting user research, defining requirements, prioritising features, and coordinating cross-functional teams to deliver usable solutions.",
     color: "bg-primary/15 text-primary",
   },
   {
     icon: Heart,
-    title: "Committed to Product Excellence",
-    description: "Focused on building products that elevate everyday experiences and solve problems that often go unnoticed but affect many people.",
+    title: "Building Fintech Product Experience",
+    description: "Supporting delivery and optimisation of payment and transaction flows, documenting product and operational processes, and collaborating across teams to improve onboarding and transaction experiences within a fintech platform.",
     color: "bg-sage-light text-foreground",
   },
 ];
@@ -143,10 +143,10 @@ export default function About() {
           {/* Detailed narrative */}
           <div className="max-w-3xl mx-auto bg-gradient-to-br from-sage-light/50 to-background rounded-2xl p-8 md:p-10 border border-border/30">
             <p className="text-muted-foreground leading-relaxed mb-4">
-              My background in Tech Sales and Senior Account Management gave me a strong foundation in understanding users, identifying root problems, and collaborating with stakeholders to deliver solutions that achieve business results. These experiences naturally developed my product instincts including asking the right questions, mapping pain points, and shaping clear value propositions.
+              My background in commercial delivery and stakeholder management helped me develop strong instincts for understanding user and business needs. Over time, I realised the work that energised me most involved breaking down complex problems and shaping solutions that improve everyday experiences.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Over time, I realised the moments that energised me most were the ones spent breaking down user problems, asking purposeful questions, and shaping solutions that created real impact. I discovered I was practicing product thinking long before I had the title.
+              Today, I apply these skills in product management, supporting the delivery of fintech and transaction products while continuing to grow as a product professional.
             </p>
           </div>
         </div>
