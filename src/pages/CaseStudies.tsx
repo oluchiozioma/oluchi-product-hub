@@ -36,6 +36,17 @@ const caseStudies = [
     metrics: ["65% Conversion Lift", "4-Week Ramp Reduction", "20% Productivity Increase"],
     color: "from-cream to-sage-light/30",
   },
+  {
+    id: "paystro",
+    title: "Paystro",
+    subtitle: "Cross-Border Payments & Transaction Platform",
+    category: "Fintech Product Management",
+    role: "Product Manager",
+    summary: "Owned strategy for structuring product documentation and transaction flow visibility across onboarding, KYC, and payment experiences, supporting delivery of features linked to a 30% increase in user acquisition.",
+    tags: ["Product Documentation", "Transaction Flows", "KYC", "Cross-Functional Collaboration", "Fintech"],
+    metrics: ["30% User Acquisition Increase", "Product Wiki Built", "End-to-End Flow Documentation"],
+    color: "from-cream to-sage-light/30",
+  },
 ];
 
 export default function CaseStudies() {
