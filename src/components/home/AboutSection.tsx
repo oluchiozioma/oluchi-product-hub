@@ -22,10 +22,10 @@ export function AboutSection() {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I am a Product Manager focused on fintech and transaction product delivery, with a background in commercial and program leadership. I work across teams to translate business and operational needs into product requirements, improve user journeys, and support delivery of payment and transaction experiences.
+                I am a Product Manager focused on fintech and transaction products, supporting delivery of payment and transaction flows within cross-functional teams. I translate business and operational needs into product requirements and help improve user journeys across onboarding and transaction experiences.
               </p>
               <p>
-                My experience spans product discovery, documentation, stakeholder alignment, and MVP delivery across fintech and consumer products. I bring strong user empathy, structured problem solving, and collaborative execution to product teams building products users rely on daily.
+                My background in commercial delivery and stakeholder management strengthens how I collaborate with teams, document product processes, and support delivery of scalable products. I'm passionate about building financial products that improve access and everyday financial experiences across emerging markets.
               </p>
             </div>
             <Button variant="ghost" className="mt-8 group" asChild>
