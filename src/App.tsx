@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import SkinSense from "./pages/case-studies/SkinSense";
 import GartnerBEN from "./pages/case-studies/GartnerBEN";
 import TalentDevelopment from "./pages/case-studies/TalentDevelopment";
+import Paystro from "./pages/case-studies/Paystro";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/case-studies/skinsense" element={<SkinSense />} />
           <Route path="/case-studies/gartner-ben" element={<GartnerBEN />} />
           <Route path="/case-studies/talent-development" element={<TalentDevelopment />} />
+          <Route path="/case-studies/paystro" element={<Paystro />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
