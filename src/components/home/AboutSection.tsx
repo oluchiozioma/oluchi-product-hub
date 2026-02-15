@@ -18,14 +18,14 @@ export function AboutSection() {
               About Me
             </p>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground mb-6 leading-tight">
-              From Tech Sales Leader to Product Manager. Driven by insight and impact.
+              Hi, I'm Oluchi.
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                My background in Tech Sales and Senior Account Management gave me a strong foundation in understanding users, identifying root problems, and collaborating with stakeholders to deliver solutions that achieve business results. These experiences naturally developed my product instincts including asking the right questions, mapping pain points, and shaping clear value propositions.
+                I am a Product Manager focused on fintech and transaction product delivery, with a background in commercial and program leadership. I work across teams to translate business and operational needs into product requirements, improve user journeys, and support delivery of payment and transaction experiences.
               </p>
               <p>
-                Over time, I realised the moments that energised me most were the ones spent breaking down user problems, asking purposeful questions, and shaping solutions that created real impact. I discovered I was practicing product thinking long before I had the title.
+                My experience spans product discovery, documentation, stakeholder alignment, and MVP delivery across fintech and consumer products. I bring strong user empathy, structured problem solving, and collaborative execution to product teams building products users rely on daily.
               </p>
             </div>
             <Button variant="ghost" className="mt-8 group" asChild>
