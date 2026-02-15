@@ -20,7 +20,7 @@ export function HeroSection() {
               className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.1] mb-6 animate-fade-up"
               style={{ animationDelay: "0.2s" }}
             >
-              Product Manager building seamless payment and transaction experiences from customer insight.
+              Building seamless payment and transaction experiences.
             </h1>
             
             <p 
