@@ -93,7 +93,7 @@ export function CaseStudiesSection() {
         </div>
 
         {/* Case Study Cards */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {caseStudies.map((study) => (
             <Link
               key={study.id}

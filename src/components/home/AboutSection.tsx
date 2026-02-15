@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 const stats = [
-  { number: "3+", label: "Years applying user-focused problem-solving across sales and product contexts" },
-  { number: "75%", label: "User engagement increase driven by product-led initiatives" },
-  { number: "$1M", label: "Pipeline generated through user-centric solution design" },
+  { number: "30%", label: "User acquisition increase through product documentation and flow visibility" },
+  { number: "75%", label: "Employee engagement lift from community platform launch" },
+  { number: "65%", label: "Conversion improvement from scalable onboarding system" },
 ];
 
 export function AboutSection() {
